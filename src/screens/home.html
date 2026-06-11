@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ridge Hall Ambler | Food &amp; Spirits</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#7c000e",
+                        "surface-bright": "#f9f9f9",
+                        "primary-container": "#9f1d21",
+                        "on-tertiary-fixed-variant": "#004c6b",
+                        "on-secondary-container": "#745200",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#5e4200",
+                        "inverse-on-surface": "#f1f1f1",
+                        "on-tertiary-container": "#8ecdf5",
+                        "on-secondary-fixed": "#271900",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#f6bd4f",
+                        "on-surface-variant": "#59413f",
+                        "tertiary-fixed": "#c6e7ff",
+                        "on-secondary": "#ffffff",
+                        "heritage-red": "#9F1D21",
+                        "on-primary": "#ffffff",
+                        "tertiary-fixed-dim": "#8fcef6",
+                        "on-surface": "#1b1b1b",
+                        "inverse-surface": "#303030",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "surface": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "outline": "#8d706e",
+                        "on-primary-container": "#ffb1ab",
+                        "secondary-fixed": "#ffdea7",
+                        "surface-dim": "#dadada",
+                        "on-background": "#1b1b1b",
+                        "industrial-black": "#000000",
+                        "primary-fixed": "#ffdad7",
+                        "on-tertiary-fixed": "#001e2d",
+                        "foundry-cream": "#E0D0A5",
+                        "tertiary": "#00405a",
+                        "surface-tint": "#b12b2c",
+                        "background": "#f9f9f9",
+                        "inverse-primary": "#ffb3ad",
+                        "secondary": "#7c5800",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-high": "#e8e8e8",
+                        "on-primary-fixed": "#410004",
+                        "error-container": "#ffdad6",
+                        "ridge-gold": "#E0AA3D",
+                        "surface-variant": "#e2e2e2",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "error": "#ba1a1a",
+                        "outline-variant": "#e1bfbb",
+                        "on-primary-fixed-variant": "#8f0f17",
+                        "surface-container-highest": "#e2e2e2",
+                        "tertiary-container": "#00587b",
+                        "secondary-container": "#ffc656",
+                        "stark-white": "#FFFFFF"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "8px",
+                        "section-gap": "80px",
+                        "margin-mobile": "16px",
+                        "gutter": "24px",
+                        "border-width": "2px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Hanken Grotesk"],
+                        "headline-lg": ["Anton"],
+                        "headline-lg-mobile": ["Anton"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-xl": ["Anton"],
+                        "label-md": ["Anton"],
+                        "headline-xl": ["Anton"],
+                        "headline-md": ["Anton"],
+                        "caption": ["Hanken Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["32px", {"lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "500"}],
+                        "label-xl": ["24px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                        "headline-xl": ["80px", {"lineHeight": "88px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "36px", "fontWeight": "400"}],
+                        "caption": ["12px", {"lineHeight": "16px", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .grunge-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.08;
+            pointer-events: none;
+        }
+        .hard-shadow {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+        .hard-shadow-lg {
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+        }
+        .border-heavy {
+            border-width: 2px;
+            border-color: #000000;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-foundry-cream text-industrial-black font-body-md selection:bg-ridge-gold selection:text-industrial-black overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="bg-industrial-black text-heritage-red docked full-width top-0 border-b-2 border-industrial-black flex justify-between items-center px-margin-mobile h-16 w-full z-50 sticky">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-stark-white cursor-pointer hover:text-ridge-gold transition-colors">menu</span>
+<span class="font-headline-md text-headline-md-mobile text-ridge-gold uppercase tracking-widest">RIDGE HALL AMBLER</span>
+</div>
+<div class="flex items-center gap-6">
+<nav class="hidden md:flex gap-6">
+<a class="font-label-md text-label-md text-ridge-gold uppercase tracking-widest hover:underline decoration-2" href="#">HOME</a>
+<a class="font-label-md text-label-md text-stark-white uppercase tracking-widest hover:text-ridge-gold transition-colors" href="#">EAT &amp; DRINK</a>
+<a class="font-label-md text-label-md text-stark-white uppercase tracking-widest hover:text-ridge-gold transition-colors" href="#">THE FACTORY</a>
+<a class="font-label-md text-label-md text-stark-white uppercase tracking-widest hover:text-ridge-gold transition-colors" href="#">HOURS</a>
+</nav>
+<span class="material-symbols-outlined text-stark-white cursor-pointer hover:text-ridge-gold transition-colors">account_circle</span>
+</div>
+</header>
+<main class="relative">
+<div class="grunge-overlay fixed inset-0 z-10"></div>
+<!-- Hero Section -->
+<section class="relative h-[707px] w-full border-b-2 border-industrial-black overflow-hidden flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img alt="Industrial hall interior" class="w-full h-full object-cover grayscale-[10%] contrast-110" src="https://lh3.googleusercontent.com/aida/AP1WRLs4eE4Pi_VJHANNcihHhTNWE4GuetwrDoG-XFO1RrvBskTKIrbPusIURpc7RNbpEtKA-blnZh4Zp1TZB3EI0i6fljpV1xUEUK61x_RgqkJ4lxgLIWOiwSG3o4J7-bOSdz2f2zoSJ-tfTBCZbno-xl-zvM-12Lp98EZqnDqL852obL9NJpuwTqUq6TbwbwYxAp89k-pGAyOY4jwUYUXqIfxX9yHohqIjuT4lf7IV6O_olO013IxwDjnryxU"/>
+<div class="absolute inset-0 bg-gradient-to-t from-industrial-black/80 via-transparent to-industrial-black/40"></div>
+</div>
+<div class="relative z-20 text-center px-gutter max-w-4xl">
+<img alt="Ridge Hall Wordmark" class="mx-auto w-64 md:w-96 mb-8 drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8lPZRqr7u97U0wQnLcTJTyehFIgNMAT1HqcqBflpaA3XDG3uLR5ftCjKE8Re9og2luU9s1hGMk51FOefvsU_mIH7kjUVHbUKbhZVowyWFN-JQJZ9oNXfdW4qKbpCgkFqmS_qZ1KEpjkUX0k-4-aawL6FUttWdIFGwmteSCR2s5BYpGuKfzfZ0DFYrCmYQd1msDeEfhFLr68erreUizBZdBtSV8vkZZnbxzrxnkixq8ABVVqdPkppLy4YzhX-iuFyjdO3r8KyLrAS2"/>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-heritage-red text-stark-white border-heavy py-4 px-12 font-label-xl uppercase hard-shadow hover:translate-y-[-2px] hover:hard-shadow-lg transition-all active:translate-y-1 active:shadow-none">
+                        View Menu
+                    </button>
+<button class="bg-stark-white text-industrial-black border-heavy py-4 px-12 font-label-xl uppercase hard-shadow hover:translate-y-[-2px] hover:hard-shadow-lg transition-all active:translate-y-1 active:shadow-none">
+                        Hours
+                    </button>
+</div>
+</div>
+</section>
+<!-- Social Space Blurb -->
+<section class="bg-ridge-gold border-b-2 border-industrial-black py-16 px-gutter text-center relative overflow-hidden">
+<div class="max-w-4xl mx-auto relative z-20">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-industrial-black uppercase mb-4">RIDGE HALL | AMBLER, PA</h2>
+<div class="h-1 w-24 bg-heritage-red mx-auto mb-6"></div>
+<p class="font-body-lg text-body-lg text-industrial-black max-w-2xl mx-auto uppercase tracking-wide">
+                    Flavor-forward social space featuring top regional chefs, craft beverages, and community gatherings.
+                </p>
+<div class="mt-8 font-label-xl text-industrial-black/60 flex justify-center items-center gap-2">
+<span class="font-headline-md">ESTD</span>
+<span class="font-headline-md">IN</span>
+<span class="font-headline-md text-heritage-red">2025</span>
+</div>
+</div>
+</section>
+<!-- Bento Grid: Food Factions -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-foundry-cream">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b-4 border-industrial-black pb-4">
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-industrial-black uppercase tracking-tight">FOOD FACTIONS UNITE</h2>
+<p class="font-label-xl text-label-xl text-heritage-red uppercase hidden md:block">10+ Eateries &amp; Craft Drinks</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Vendor 1: Twisted Gingers -->
+<div class="md:col-span-6 border-heavy bg-industrial-black p-8 flex flex-col items-center justify-between group hard-shadow-lg relative min-h-[450px]">
+<div class="absolute top-4 left-4 bg-heritage-red text-stark-white px-4 py-1 font-label-md uppercase z-30 -rotate-3 border-heavy">NOW OPEN</div>
+<img alt="Twisted Gingers Logo" class="w-2/3 md:w-3/4 aspect-square object-contain group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLtk0KZ_GgwY9ituiIRlseOIpmPahbgz4s8oesowAQqVI7cI0OtNPzlZkjTusa4B3BNmAl2v-yicki9cgjw--mwORLDDhZ256eZYyp0y69BPy1wFA-3hsdLkr_fpMwHI70yFQ6sqP9tpHxJt4O_5hHZwo5iRl0LuunUQZv4fC6t_V_Oay2LxuN4gYs9hLGEKxG0IoHjZ6-Y03L7BfpdBqoCQW1brM3_hH27uE3FhXzD9L54GBqhoYX4w_kKT"/>
+<div class="text-center mt-8 w-full">
+<h3 class="font-headline-md text-headline-md text-ridge-gold uppercase mb-4">Twisted Gingers</h3>
+<button class="w-full bg-ridge-gold text-industrial-black border-heavy py-3 font-label-md uppercase hard-shadow hover:bg-stark-white transition-colors">View More</button>
+</div>
+</div>
+<!-- Column 2 -->
+<div class="md:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Vendor 2: Double Down -->
+<div class="border-heavy bg-industrial-black p-6 flex flex-col items-center justify-between group hard-shadow relative">
+<div class="absolute top-4 left-4 bg-heritage-red text-stark-white px-3 py-1 font-label-md uppercase z-30 -rotate-3 border-heavy">NOW OPEN</div>
+<img alt="Double Down Kitchen Logo" class="w-4/5 aspect-square object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLupa9JFIpMMXA3OfUPQ54dlzgZsaszVT0jB5XvjZn3_rhSXj7ViVulGYJrF06fYxc3ugXwCgVYel9AxIze0I-CXR7IZ4vwyVbmWZfCrAFBRkJjIWeLIV6Mb8yxOKVGA2-Bm7O5WJak5cgTB6HRjb8dDZUjSSEZ1UH7Grqr1dH3OKTMVezWNnNnkdje4d7W7hd3JxICwK2GOJ6jQxcNnuogGrTXj2ahdgYyEwZHLrLHyAAv8Fw9GCVdLfNg"/>
+<div class="text-center w-full">
+<h3 class="font-label-xl text-label-xl text-ridge-gold uppercase mb-4">Double Down Kitchen</h3>
+<button class="w-full bg-ridge-gold text-industrial-black border-heavy py-2 font-label-md uppercase hard-shadow">View More</button>
+</div>
+</div>
+<!-- Vendor 3: Lucky's Roadside -->
+<div class="border-heavy bg-industrial-black p-6 flex flex-col items-center justify-between group hard-shadow relative">
+<div class="absolute top-4 left-4 bg-heritage-red text-stark-white px-3 py-1 font-label-md uppercase z-30 -rotate-3 border-heavy">NOW OPEN</div>
+<img alt="Lucky's Roadside Stand Logo" class="w-4/5 aspect-square object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLvqyHD1u9s7BXAinBM9gu9zADwAqyPWFwVBZ8PNwwbZOtKk1DIH9AGuHY64sgsGvPeHqZ1WbI4sB2roCA9WCgIlNcTFWTiuGM-iuoFfOA6JMPIJXmQIBbFj9eN5q9H87aANprt8UC9uRXYRYF6D2zbAVBkfVaVh9Dy96IakJA8PDfUdOUkinurgtOCmY23pVpYTr5U1tAJUrcWMgnPcWRty8VRFncDaUpzGkpOfFClfqB9GseG2--rCTWXV"/>
+<div class="text-center w-full">
+<h3 class="font-label-xl text-label-xl text-ridge-gold uppercase mb-4">Lucky's Roadside</h3>
+<button class="w-full bg-ridge-gold text-industrial-black border-heavy py-2 font-label-md uppercase hard-shadow">View More</button>
+</div>
+</div>
+<!-- Vendor 4: Pho Mi Please -->
+<div class="border-heavy bg-heritage-red p-6 flex flex-col items-center justify-between group hard-shadow relative md:col-span-2">
+<div class="absolute top-4 left-4 bg-industrial-black text-stark-white px-3 py-1 font-label-md uppercase z-30 -rotate-3 border-heavy">NOW OPEN</div>
+<div class="flex flex-col md:flex-row items-center gap-8 w-full h-full">
+<img alt="Pho Mi Please Logo" class="w-32 md:w-48 aspect-square object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLv0VkOEdShk-97MEJADWsS6idieaBDrfAO_MRA_uAJKseWwMYpH-GShdI0ZBPtXBBYAWAi3mTefwfiPaFH1t4-3ZOSAqC28F_cxTGPuIFLYPhaUhZBkHW2mtfgtOSQsojs5bHbJYg-athtIQP5S5nJM6oh9O7Gh1TMWx9J8VLq3p5ue83ULLzVjCqRMDHQxZmgd6-p3LWmLIbo7uzixbuxxLoaah4HFBeypKFDHCcH5lDgkOMswTwDlvwaC"/>
+<div class="flex-grow text-center md:text-left">
+<h3 class="font-headline-md text-headline-md text-stark-white uppercase mb-2">Pho Mi Please</h3>
+<p class="text-ridge-gold font-body-md mb-4 uppercase tracking-tighter">Vietnamese comfort in every bowl</p>
+<button class="bg-ridge-gold text-industrial-black border-heavy px-8 py-2 font-label-md uppercase hard-shadow">View More</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Variety Photography Section -->
+<div class="mt-section-gap grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="aspect-square border-heavy overflow-hidden hard-shadow">
+<img alt="Delicious Food" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLvNgOIF-bbfaZ62vz9OxZLydA0o4pNlvm_yiOdjuRrg93VsUERbjOL1dk3QP_VCfhy-s7BcZ7wPlPUU_ql-pzdI7YV9ATHeXLFX5_aCSwiDVRj0cLVRRyGYK02Y-kMLwBhR-avEbTivJWYlsU3OEvcNzguojy2ZAMsE4P0JB8DGOw4pBYLZQ8JbV3TjHALs0v0wCgtehdZVjy1nW94DcSJ2qBCSEd4b0GF_ZhWHKW6Uk7QyFT3qDHkvAVow"/>
+</div>
+<div class="aspect-square border-heavy overflow-hidden hard-shadow">
+<img alt="Artisan Appetizer" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLuIxO7FGIFek2nZvkOpnbPe1dK8lOAoOkCJxKwqDVlACZxxe8-75BHCwDiT0dWdKznDid5oCAr8QzKYkB4fHHqhZRc-Qw3MWMHyDdBByBMCVFRlX87FNElg9uMALCrGTnZCGaXYJrIVseqWEsNoocyYiI30hFtFWsQ0s2vpYuRGfNRy2bkbkN-glMhxMSO7QE0I5wZayM7OgChLaXFHNd0xfrGkMqJDEFtUdjfNhu_QhDR2VUE_d2khsHo"/>
+</div>
+<div class="aspect-square border-heavy overflow-hidden hard-shadow">
+<img alt="Local Products" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLu2Wra8nZgaE87ROoHAa8TOYEVXotEFCKi9NsuHcCz8TtEsa0OU3-Zfgez5Gcfvia2hXpqix6WJedw3EWbbQz4TMWs7kXR2YngBEthaSbTRW2zocLlo5Rgzo8eTsAufJFHBCjcRuseBYGKW8mgzykWGJD4Z96P7RmSQ3vcM83rKQZQ6lC5SaiCZlHSB8qPyhf6Pxyfp-AuVKf7Se8uO9tQCrZSQBO8C4ZhsvUrYg65XdQ8x4CHSMgCg5_LY"/>
+</div>
+<div class="aspect-square border-heavy overflow-hidden hard-shadow">
+<img alt="Gourmet Sandwich" class="w-full h-full object-cover hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLvFAfrEMsAa38K66xZ9y5wpxfM5oaJKl4q8XkHojl_vaa0zSwkoGyLRM7ZdvKocR7A6H1piXbq65KtJltNi1oS6YlJP3iSTHYzvhYjh-8nXtgfkrMDQX30lkqjuC_KZK-R3pVcxrsukXiah7alOnSiSDENdXe5tK6vYgUvtngY-YII_8jD2x156OB-KMtKlUvRFEjfy1_jqYsqhkssoveJOQOZzniugYh_59jvFJGR62cSY81nVoZxdqe4"/>
+</div>
+</div>
+<div class="mt-16 text-center">
+<button class="bg-heritage-red text-stark-white border-heavy py-6 px-16 font-headline-md uppercase hard-shadow-lg hover:translate-y-[-4px] hover:hard-shadow-xl transition-all active:translate-y-1 active:shadow-none">
+                    Explore All Vendors
+                </button>
+</div>
+</section>
+<!-- Bold Split Section -->
+<section class="bg-heritage-red py-20 px-gutter border-y-2 border-industrial-black relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-section-gap items-center max-w-7xl mx-auto">
+<div>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-stark-white uppercase leading-[0.9] mb-8">
+                        RIDGE HALL IS A BURST OF FLAVOR WITH BOLD BITES!
+                    </h2>
+<p class="font-body-lg text-body-lg text-stark-white uppercase tracking-widest opacity-90 border-l-4 border-ridge-gold pl-6 mb-8">
+                        Experience the best of Ambler's culinary scene in our historic venue. All in historic Ambler.
+                    </p>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-ridge-gold text-4xl" style="font-variation-settings: 'FILL' 1;">restaurant</span>
+<span class="material-symbols-outlined text-ridge-gold text-4xl" style="font-variation-settings: 'FILL' 1;">local_bar</span>
+<span class="material-symbols-outlined text-ridge-gold text-4xl" style="font-variation-settings: 'FILL' 1;">history</span>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-industrial-black border-heavy translate-x-4 translate-y-4 -z-10"></div>
+<div class="border-heavy overflow-hidden bg-stark-white p-4 h-[500px]">
+<img alt="Chef at the grill" class="w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-[2s]" src="https://lh3.googleusercontent.com/aida/AP1WRLuFS4CbHuCtWX4zdOLoSPaISCmZTfsShCPEv_1mPbfaneX_1mT3Y6S_XI1R9Y3j9TkSF3K2xwq23pJ9P9l0Y9mohtpNYE22FsZIh7NPL2YGyOoEhLUPQ1Cxkcx343oXpMU5Sr02uN43lkd6Y_hjBAW2_cQVK26A6zEKQKFIysCCn4X2QLmZDB3aVEaDYbCZMJMM50yOK77izPHT5Y14URKG_GpY3tgy_MojrBDSYOk8dl-1grK64--36UU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter & Footer Area -->
+<footer class="bg-ridge-gold border-t-2 border-industrial-black pt-section-gap pb-12 px-margin-mobile md:px-margin-desktop relative">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter mb-20">
+<div class="md:col-span-4">
+<img alt="Ridge Hall Wordmark" class="w-48 mb-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8lPZRqr7u97U0wQnLcTJTyehFIgNMAT1HqcqBflpaA3XDG3uLR5ftCjKE8Re9og2luU9s1hGMk51FOefvsU_mIH7kjUVHbUKbhZVowyWFN-JQJZ9oNXfdW4qKbpCgkFqmS_qZ1KEpjkUX0k-4-aawL6FUttWdIFGwmteSCR2s5BYpGuKfzfZ0DFYrCmYQd1msDeEfhFLr68erreUizBZdBtSV8vkZZnbxzrxnkixq8ABVVqdPkppLy4YzhX-iuFyjdO3r8KyLrAS2"/>
+<div class="flex gap-4 mb-8">
+<a class="w-12 h-12 bg-industrial-black text-stark-white flex items-center justify-center border-heavy hover:bg-heritage-red transition-colors" href="https://www.instagram.com/ridgehall_ambler/">
+<span class="material-symbols-outlined">photo_camera</span>
+</a>
+<a class="w-12 h-12 bg-industrial-black text-stark-white flex items-center justify-center border-heavy hover:bg-heritage-red transition-colors" href="https://www.facebook.com/people/Ridge-Hall/61576560320812/">
+<span class="material-symbols-outlined">facebook</span>
+</a>
+</div>
+<div class="font-headline-md flex gap-2 uppercase">
+<span class="">ESTD</span>
+<span class="">IN</span>
+<span class="text-heritage-red">2025</span>
+</div>
+</div>
+<div class="md:col-span-8">
+<div class="bg-industrial-black p-8 md:p-12 border-heavy hard-shadow-lg">
+<h3 class="font-headline-md text-headline-md text-stark-white uppercase mb-6">SIGN UP TO GET THE LATEST UPDATES AND OFFERS</h3>
+<div class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow bg-stark-white border-heavy px-6 py-4 font-label-md uppercase text-industrial-black focus:ring-0 focus:border-heritage-red outline-none" placeholder="ENTER EMAIL" type="email"/>
+<button class="bg-heritage-red text-stark-white border-heavy px-12 py-4 font-label-xl uppercase hover:bg-ridge-gold hover:text-industrial-black transition-colors">
+                                    SUBSCRIBE
+                                </button>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t-2 border-industrial-black/20">
+<div class="text-center md:text-left">
+<p class="font-label-md text-label-md text-industrial-black uppercase opacity-60 mb-2">Location</p>
+<p class="font-label-xl text-label-xl uppercase">15 S Ridge Ave, Ambler, PA 19002</p>
+</div>
+<div class="text-center">
+<p class="font-label-md text-label-md text-industrial-black uppercase opacity-60 mb-2">Contact</p>
+<p class="font-label-xl text-label-xl uppercase">info@ridgehallambler.com</p>
+</div>
+<div class="text-center md:text-right">
+<p class="font-label-md text-label-md text-industrial-black uppercase opacity-60 mb-2">Copyright</p>
+<p class="font-label-xl text-label-xl uppercase">© 2025 - RIDGE HALL</p>
+</div>
+</div>
+</div>
+</footer>
+</main>
+<!-- Bottom Navigation Bar (Mobile only) -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center bg-industrial-black py-2 px-2 border-t-2 border-industrial-black">
+<button class="flex flex-col items-center justify-center bg-heritage-red text-stark-white rounded-none p-2 border-2 border-industrial-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-label-md text-[10px] uppercase mt-1">HUB</span>
+</button>
+<button class="flex flex-col items-center justify-center text-foundry-cream p-2 hover:text-ridge-gold transition-colors">
+<span class="material-symbols-outlined">restaurant</span>
+<span class="font-label-md text-[10px] uppercase mt-1">VENDORS</span>
+</button>
+<button class="flex flex-col items-center justify-center text-foundry-cream p-2 hover:text-ridge-gold transition-colors">
+<span class="material-symbols-outlined">casino</span>
+<span class="font-label-md text-[10px] uppercase mt-1">DECIDE</span>
+</button>
+<button class="flex flex-col items-center justify-center text-foundry-cream p-2 hover:text-ridge-gold transition-colors">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label-md text-[10px] uppercase mt-1">JOURNAL</span>
+</button>
+<button class="flex flex-col items-center justify-center text-foundry-cream p-2 hover:text-ridge-gold transition-colors">
+<span class="material-symbols-outlined">loyalty</span>
+<span class="font-label-md text-[10px] uppercase mt-1">REWARDS</span>
+</button>
+</nav>
+<script>
+        // Micro-interactions for buttons
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('mousedown', () => {
+                btn.style.transform = 'translateY(2px)';
+                if(btn.classList.contains('hard-shadow')) btn.style.boxShadow = 'none';
+            });
+            btn.addEventListener('mouseup', () => {
+                btn.style.transform = '';
+                if(btn.classList.contains('hard-shadow')) btn.style.boxShadow = '';
+            });
+        });
+    </script>
+</body></html>

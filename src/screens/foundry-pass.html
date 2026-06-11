@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Foundry Pass | Ridge Hall Ambler</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#7c000e",
+                    "surface-bright": "#f9f9f9",
+                    "primary-container": "#9f1d21",
+                    "on-tertiary-fixed-variant": "#004c6b",
+                    "on-secondary-container": "#745200",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#5e4200",
+                    "inverse-on-surface": "#f1f1f1",
+                    "on-tertiary-container": "#8ecdf5",
+                    "on-secondary-fixed": "#271900",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#f6bd4f",
+                    "on-surface-variant": "#59413f",
+                    "tertiary-fixed": "#c6e7ff",
+                    "on-secondary": "#ffffff",
+                    "heritage-red": "#9F1D21",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#8fcef6",
+                    "on-surface": "#1b1b1b",
+                    "inverse-surface": "#303030",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "surface": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "outline": "#8d706e",
+                    "on-primary-container": "#ffb1ab",
+                    "secondary-fixed": "#ffdea7",
+                    "surface-dim": "#dadada",
+                    "on-background": "#1b1b1b",
+                    "industrial-black": "#000000",
+                    "primary-fixed": "#ffdad7",
+                    "on-tertiary-fixed": "#001e2d",
+                    "foundry-cream": "#E0D0A5",
+                    "tertiary": "#00405a",
+                    "surface-tint": "#b12b2c",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#ffb3ad",
+                    "secondary": "#7c5800",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-container-high": "#e8e8e8",
+                    "on-primary-fixed": "#410004",
+                    "error-container": "#ffdad6",
+                    "ridge-gold": "#E0AA3D",
+                    "surface-variant": "#e2e2e2",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#e1bfbb",
+                    "on-primary-fixed-variant": "#8f0f17",
+                    "surface-container-highest": "#e2e2e2",
+                    "tertiary-container": "#00587b",
+                    "secondary-container": "#ffc656",
+                    "stark-white": "#FFFFFF"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "section-gap": "80px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "border-width": "2px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg": ["Anton"],
+                    "headline-lg-mobile": ["Anton"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-xl": ["Anton"],
+                    "label-md": ["Anton"],
+                    "headline-xl": ["Anton"],
+                    "headline-md": ["Anton"],
+                    "caption": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "label-xl": ["24px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                    "headline-xl": ["80px", {"lineHeight": "88px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .splatter-bg {
+            background-image: radial-gradient(circle at 2px 2px, rgba(0,0,0,0.08) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+        .hard-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+        }
+        .hard-shadow-sm {
+            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+        }
+        .noise-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            opacity: 0.08;
+            background-image: url('https://www.transparenttextures.com/patterns/pinstripe-dark.png');
+            z-index: 99;
+        }
+        .gritty-texture {
+            position: relative;
+        }
+        .gritty-texture::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+            opacity: 0.1;
+            pointer-events: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-foundry-cream font-body-md text-industrial-black min-h-screen overflow-x-hidden splatter-bg">
+<div class="noise-overlay"></div>
+<!-- TopAppBar -->
+<header class="bg-industrial-black fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-margin-desktop h-16 border-b-2 border-industrial-black">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-ridge-gold mr-4 cursor-pointer">menu</span>
+<h1 class="font-headline-md text-[24px] md:text-headline-md text-ridge-gold uppercase tracking-widest">RIDGE HALL AMBLER</h1>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-stark-white hover:text-ridge-gold transition-colors uppercase" href="#">HUB</a>
+<a class="font-label-md text-stark-white hover:text-ridge-gold transition-colors uppercase" href="#">VENDORS</a>
+<a class="font-label-md text-stark-white hover:text-ridge-gold transition-colors uppercase" href="#">DECIDE</a>
+<a class="font-label-md text-stark-white hover:text-ridge-gold transition-colors uppercase" href="#">JOURNAL</a>
+<a class="font-label-md text-ridge-gold border-b-2 border-ridge-gold uppercase" href="#">REWARDS</a>
+</div>
+<div class="flex items-center">
+<span class="material-symbols-outlined text-stark-white hover:text-ridge-gold cursor-pointer">account_circle</span>
+</div>
+</header>
+<main class="pt-24 pb-32 px-4 md:px-margin-desktop max-w-7xl mx-auto">
+<!-- Hero Section: Foundry Pass Identity -->
+<section class="mb-12">
+<div class="bg-heritage-red p-8 border-2 border-industrial-black hard-shadow text-center relative overflow-hidden gritty-texture">
+<div class="absolute -top-10 -right-10 opacity-10 rotate-12">
+<span class="material-symbols-outlined text-[200px] text-stark-white" style="font-variation-settings: 'FILL' 1;">loyalty</span>
+</div>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-stark-white uppercase leading-none mb-2 relative z-10">FOUNDRY PASS</h2>
+<p class="font-label-xl text-ridge-gold uppercase relative z-10">EST. 1904 AMBLER, PA</p>
+</div>
+</section>
+<!-- Loyalty Dashboard Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Points Gauge (Industrial Style) -->
+<div class="lg:col-span-5 bg-stark-white border-2 border-industrial-black p-8 hard-shadow flex flex-col items-center justify-center text-center relative gritty-texture">
+<h3 class="font-label-xl uppercase mb-8 border-b-2 border-industrial-black w-full pb-2">FORGE PROGRESS</h3>
+<div class="relative w-64 h-64 flex items-center justify-center">
+<!-- Gauge Mockup -->
+<div class="absolute inset-0 border-[12px] border-foundry-cream rounded-full"></div>
+<svg class="w-full h-full -rotate-90">
+<circle cx="128" cy="128" fill="transparent" r="108" stroke="#7c000e" stroke-dasharray="678" stroke-dashoffset="100" stroke-linecap="butt" stroke-width="24"></circle>
+</svg>
+<div class="absolute flex flex-col items-center">
+<span class="font-headline-xl text-heritage-red leading-none">850</span>
+<span class="font-label-md uppercase tracking-widest text-industrial-black">IRON POINTS</span>
+</div>
+</div>
+<p class="mt-8 font-body-md text-industrial-black uppercase font-bold">150 POINTS UNTIL YOUR NEXT POUR</p>
+<div class="w-full h-6 bg-foundry-cream border-2 border-industrial-black mt-4 overflow-hidden">
+<div class="h-full bg-heritage-red w-[85%] border-r-2 border-industrial-black"></div>
+</div>
+</div>
+<!-- Digital Punch Card / QR Code -->
+<div class="lg:col-span-7 grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Scan Section -->
+<div class="bg-ridge-gold border-2 border-industrial-black p-6 hard-shadow flex flex-col items-center text-center gritty-texture">
+<h3 class="font-label-xl uppercase mb-6 text-industrial-black">STAMP STATION</h3>
+<div class="bg-stark-white p-4 border-2 border-industrial-black mb-4">
+<!-- QR Code Placeholder -->
+<div class="w-40 h-40 bg-industrial-black flex items-center justify-center">
+<span class="material-symbols-outlined text-stark-white text-7xl">qr_code_2</span>
+</div>
+</div>
+<p class="font-caption uppercase text-industrial-black max-w-[200px] font-bold">SCAN AT ANY VENDOR TO ACCRUE RAW MATERIALS</p>
+</div>
+<!-- Digital Punch Card -->
+<div class="bg-industrial-black border-2 border-industrial-black p-6 hard-shadow text-stark-white gritty-texture">
+<h3 class="font-label-xl uppercase mb-6 text-ridge-gold">BEER BARREL CARD</h3>
+<div class="grid grid-cols-3 gap-4">
+<!-- Stamps -->
+<div class="aspect-square border-2 border-ridge-gold flex items-center justify-center bg-heritage-red">
+<span class="material-symbols-outlined text-stark-white" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="aspect-square border-2 border-ridge-gold flex items-center justify-center bg-heritage-red">
+<span class="material-symbols-outlined text-stark-white" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="aspect-square border-2 border-ridge-gold flex items-center justify-center bg-heritage-red">
+<span class="material-symbols-outlined text-stark-white" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="aspect-square border-2 border-ridge-gold flex items-center justify-center bg-heritage-red">
+<span class="material-symbols-outlined text-stark-white" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+<div class="aspect-square border-2 border-ridge-gold flex items-center justify-center bg-industrial-black">
+<span class="font-label-xl text-ridge-gold opacity-30">5</span>
+</div>
+<div class="aspect-square border-2 border-ridge-gold flex items-center justify-center bg-industrial-black">
+<span class="font-label-xl text-ridge-gold opacity-30">6</span>
+</div>
+</div>
+<p class="mt-6 font-caption uppercase text-ridge-gold font-bold">2 MORE PUNCHES FOR A FREE GROWLER FILL</p>
+</div>
+</div>
+</div>
+<!-- Featured Rewards -->
+<section class="mt-section-gap">
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase border-b-4 border-heritage-red inline-block mb-12">AVAILABLE REWARDS</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Reward Card 1 -->
+<div class="bg-stark-white border-2 border-industrial-black group overflow-hidden hard-shadow-sm hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200">
+<div class="h-48 overflow-hidden relative border-b-2 border-industrial-black">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A close up shot of a frosted glass of dark stout beer with a thick creamy head sitting on a rustic wooden industrial table. The background is a dimly lit bar with amber lighting and metallic industrial piping. High contrast professional photography with a rugged foundry aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-p_gC9kDK0PUYB35GVm-KlZyCNaO-AVRN-ImCu0_vNq57MMoBfxWsyDGQRBrrs5DIitwvx0nxY5HpnOiYmuK6Yp3gjygZUJHL4uI10N3BIMO4vxgZEGeKUlsE9OmBtz1hOIrtNHweXKsrIBhcDe4z3MBftiJIiDd-c7LK6fsftgjtyy6VHBtTkyQT0r4gbHtUV4CfGQNBWsye9KXCS8pIEiGLh3evbPQvmN_lwGmbkrN_vyCOZWM1eyIQY3OGPN49qyM6gGeNMDTf"/>
+<div class="absolute top-0 right-0 bg-heritage-red text-stark-white font-label-md px-4 py-1 uppercase border-l-2 border-b-2 border-industrial-black">
+                            300 PTS
+                        </div>
+</div>
+<div class="p-6">
+<h4 class="font-label-xl uppercase mb-2">FACTORY POUR</h4>
+<p class="font-body-md text-neutral-600 mb-6">Redeem for any flagship draft at the Foundry Bar.</p>
+<button class="w-full py-4 bg-industrial-black text-stark-white font-label-xl uppercase border-2 border-industrial-black active:translate-y-1 transition-all">CLAIM REWARD</button>
+</div>
+</div>
+<!-- Reward Card 2 (Mercantile Bundle - Refreshed with Asset) -->
+<div class="bg-foundry-cream border-2 border-industrial-black group overflow-hidden hard-shadow-sm hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200">
+<div class="h-48 overflow-hidden relative border-b-2 border-industrial-black">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLtcYLGnfZSebu0HJp713a38rlh4zK-Y_c9nfM-t6P3-ZEwZ7okK7jRZNpPZfiITHpQ3cI6gBF4gNox3zBOblmlPuV63Z4LacxYfaO3NkQG-v_LdBBN07lJ1st2peyz-MT-xc9H0a0OndrVBLmpEgpcB3QmuTemNKhd44jMkdSbcmSM6CXroLuDdeuv9IVYgwXw1FkAUBXXvioQaGQ_Cv3ucoCHs6JK5vXGWhtNOflsB8o6xkMq9dgG_08MK"/>
+<div class="absolute top-0 right-0 bg-ridge-gold text-industrial-black font-label-md px-4 py-1 uppercase border-l-2 border-b-2 border-industrial-black">
+                            500 PTS
+                        </div>
+</div>
+<div class="p-6">
+<h4 class="font-label-xl uppercase mb-2">MERCANTILE BUNDLE</h4>
+<p class="font-body-md text-neutral-600 mb-6">Choose any two artisanal treats or canned brews from the mercantile.</p>
+<button class="w-full py-4 bg-heritage-red text-stark-white font-label-xl uppercase border-2 border-industrial-black active:translate-y-1 transition-all">CLAIM REWARD</button>
+</div>
+</div>
+<!-- Reward Card 3 -->
+<div class="bg-stark-white border-2 border-industrial-black group overflow-hidden hard-shadow-sm hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-200">
+<div class="h-48 overflow-hidden relative border-b-2 border-industrial-black">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A high-quality cotton black t-shirt with a vintage bold yellow industrial logo displayed on a clean white background. The lighting is crisp and modern, highlighting the fabric texture. The overall style is clean and professional merchandise photography for an upscale industrial brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTyKrVqgK1tU--YJmDhaorWWbrVcBybBEoBqtYdRXJBIfEILwKVdPZStqn9mOzN0CKfHqDq2kCrG7STHnzLFhFE5XAT2WoA4zeSLmpzzPD_sy4vjz07D1HdftHOxhgQJ2tbmd6VxV0iQvCDXDod9q1vmXhBAcy-dWYnYREdmKP7X99iMuogFIVheIqS3Uz1rdTcT4CNWUiVEEYSRJcug25rKDQ5kOmuJfN7yNB11ifQxbSeGImluakM8RziqhuNxcrC79QNkrwTDqs"/>
+<div class="absolute top-0 right-0 bg-heritage-red text-stark-white font-label-md px-4 py-1 uppercase border-l-2 border-b-2 border-industrial-black">
+                            1200 PTS
+                        </div>
+</div>
+<div class="p-6">
+<h4 class="font-label-xl uppercase mb-2">FOUNDRY GEAR</h4>
+<p class="font-body-md text-neutral-600 mb-6">Exclusive limited edition 'Ridge Hall' heavy-duty graphic tee.</p>
+<button class="w-full py-4 bg-industrial-black text-stark-white font-label-xl uppercase border-2 border-industrial-black active:translate-y-1 transition-all">CLAIM REWARD</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Transaction History / Journal -->
+<section class="mt-section-gap mb-20">
+<div class="bg-stark-white border-2 border-industrial-black p-8 hard-shadow gritty-texture">
+<div class="flex justify-between items-end mb-8">
+<h2 class="font-label-xl uppercase">FORGE HISTORY</h2>
+<a class="font-label-md text-heritage-red underline uppercase font-bold" href="#">VIEW ALL JOURNAL</a>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-center py-4 border-b-2 border-foundry-cream">
+<div>
+<p class="font-label-md uppercase">TWISTED GINGERS BREWING</p>
+<p class="font-caption text-neutral-500">MAY 14, 2024</p>
+</div>
+<span class="font-label-xl text-heritage-red">+45 PTS</span>
+</div>
+<div class="flex justify-between items-center py-4 border-b-2 border-foundry-cream">
+<div>
+<p class="font-label-md uppercase">PHO MI PLEASE!</p>
+<p class="font-caption text-neutral-500">MAY 12, 2024</p>
+</div>
+<span class="font-label-xl text-heritage-red">+32 PTS</span>
+</div>
+<div class="flex justify-between items-center py-4 border-b-2 border-foundry-cream">
+<div>
+<p class="font-label-md uppercase">REWARD REDEMPTION: POURED COLD</p>
+<p class="font-caption text-neutral-500">MAY 10, 2024</p>
+</div>
+<span class="font-label-xl text-industrial-black">-300 PTS</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center bg-industrial-black py-2 px-2 border-t-2 border-industrial-black md:hidden">
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">home_app_logo</span>
+<span class="font-label-md uppercase mt-1">HUB</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-label-md uppercase mt-1">VENDORS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">casino</span>
+<span class="font-label-md uppercase mt-1">DECIDE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label-md uppercase mt-1">JOURNAL</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-heritage-red text-stark-white p-2 border-2 border-industrial-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">loyalty</span>
+<span class="font-label-md uppercase mt-1">REWARDS</span>
+</a>
+</nav>
+<!-- Footer -->
+<footer class="bg-ridge-gold border-t-4 border-industrial-black py-16 px-4 md:px-margin-desktop text-center gritty-texture">
+<div class="max-w-4xl mx-auto relative z-10">
+<h2 class="font-headline-lg text-industrial-black uppercase mb-8">JOIN THE FOUNDRY</h2>
+<div class="flex flex-col md:flex-row gap-4 mb-12">
+<input class="flex-grow p-4 border-2 border-industrial-black bg-stark-white font-label-md uppercase focus:ring-0 focus:border-heritage-red" placeholder="ENTER YOUR EMAIL" type="email"/>
+<button class="bg-heritage-red text-stark-white px-8 py-4 border-2 border-industrial-black font-label-xl uppercase hard-shadow-sm active:translate-y-1 transition-all">SUBSCRIBE</button>
+</div>
+<div class="flex justify-center gap-8 mb-12">
+<span class="material-symbols-outlined text-4xl text-industrial-black cursor-pointer hover:text-heritage-red transition-colors">face_nod</span>
+<span class="material-symbols-outlined text-4xl text-industrial-black cursor-pointer hover:text-heritage-red transition-colors">share</span>
+</div>
+<p class="font-label-md text-industrial-black uppercase tracking-widest font-bold">© 2025 RIDGE HALL AMBLER — 15 S RIDGE AVE, AMBLER, PA</p>
+</div>
+</footer>
+<script>
+        // Micro-interaction for claiming rewards
+        document.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                if(this.innerText === 'CLAIM REWARD') {
+                    const originalText = this.innerText;
+                    this.innerText = 'PROCESSING...';
+                    this.style.backgroundColor = '#000000';
+                    setTimeout(() => {
+                        this.innerText = 'CLAIMED!';
+                        this.style.backgroundColor = '#16a34a';
+                        setTimeout(() => {
+                            this.innerText = originalText;
+                            this.style.backgroundColor = this.classList.contains('bg-heritage-red') ? '#9F1D21' : '#000000';
+                        }, 2000);
+                    }, 1000);
+                }
+            });
+        });
+    </script>
+</body></html>

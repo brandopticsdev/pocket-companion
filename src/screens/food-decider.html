@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RIDGE HALL AMBLER | FOOD DECIDER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#7c000e",
+                    "surface-bright": "#f9f9f9",
+                    "primary-container": "#9f1d21",
+                    "on-tertiary-fixed-variant": "#004c6b",
+                    "on-secondary-container": "#745200",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#5e4200",
+                    "inverse-on-surface": "#f1f1f1",
+                    "on-tertiary-container": "#8ecdf5",
+                    "on-secondary-fixed": "#271900",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#f6bd4f",
+                    "on-surface-variant": "#59413f",
+                    "tertiary-fixed": "#c6e7ff",
+                    "on-secondary": "#ffffff",
+                    "heritage-red": "#9F1D21",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#8fcef6",
+                    "on-surface": "#1b1b1b",
+                    "inverse-surface": "#303030",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "surface": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "outline": "#8d706e",
+                    "on-primary-container": "#ffb1ab",
+                    "secondary-fixed": "#ffdea7",
+                    "surface-dim": "#dadada",
+                    "on-background": "#1b1b1b",
+                    "industrial-black": "#000000",
+                    "primary-fixed": "#ffdad7",
+                    "on-tertiary-fixed": "#001e2d",
+                    "foundry-cream": "#E0D0A5",
+                    "tertiary": "#00405a",
+                    "surface-tint": "#b12b2c",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#ffb3ad",
+                    "secondary": "#7c5800",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-container-high": "#e8e8e8",
+                    "on-primary-fixed": "#410004",
+                    "error-container": "#ffdad6",
+                    "ridge-gold": "#E0AA3D",
+                    "surface-variant": "#e2e2e2",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#e1bfbb",
+                    "on-primary-fixed-variant": "#8f0f17",
+                    "surface-container-highest": "#e2e2e2",
+                    "tertiary-container": "#00587b",
+                    "secondary-container": "#ffc656",
+                    "stark-white": "#FFFFFF"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg": ["Anton"],
+                    "headline-lg-mobile": ["Anton"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-xl": ["Anton"],
+                    "label-md": ["Anton"],
+                    "headline-xl": ["Anton"],
+                    "headline-md": ["Anton"],
+                    "caption": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "0.02em"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "36px", "letterSpacing": "0.02em"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "label-xl": ["24px", {"lineHeight": "24px"}],
+                    "label-md": ["14px", {"lineHeight": "14px", "letterSpacing": "0.05em"}],
+                    "headline-xl": ["80px", {"lineHeight": "88px", "letterSpacing": "0.02em"}],
+                    "headline-md": ["32px", {"lineHeight": "36px"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        
+        .grunge-overlay {
+            background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+            mix-blend-mode: multiply;
+            opacity: 0.15;
+            pointer-events: none;
+        }
+
+        .brand-image-overlay {
+            background-image: url('https://lh3.googleusercontent.com/aida/AP1WRLs4eE4Pi_VJHANNcihHhTNWE4GuetwrDoG-XFO1RrvBskTKIrbPusIURpc7RNbpEtKA-blnZh4Zp1TZB3EI0i6fljpV1xUEUK61x_RgqkJ4lxgLIWOiwSG3o4J7-bOSdz2f2zoSJ-tfTBCZbno-xl-zvM-12Lp98EZqnDqL852obL9NJpuwTqUq6TbwbwYxAp89k-pGAyOY4jwUYUXqIfxX9yHohqIjuT4lf7IV6O_olO013IxwDjnryxU');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.05;
+            filter: grayscale(100%) contrast(150%);
+            mix-blend-mode: multiply;
+        }
+
+        .gear-teeth {
+            background-image: 
+                radial-gradient(circle at center, transparent 65%, black 65.5%),
+                conic-gradient(from 0deg, black 0deg 10deg, transparent 10deg 30deg, black 30deg 40deg, transparent 40deg 60deg, black 60deg 70deg, transparent 70deg 90deg, black 90deg 100deg, transparent 100deg 120deg, black 120deg 130deg, transparent 130deg 150deg, black 150deg 160deg, transparent 160deg 180deg, black 180deg 190deg, transparent 190deg 210deg, black 210deg 220deg, transparent 220deg 240deg, black 240deg 250deg, transparent 250deg 270deg, black 270deg 280deg, transparent 280deg 300deg, black 300deg 310deg, transparent 310deg 330deg, black 330deg 340deg, transparent 340deg 360deg);
+        }
+
+        .wheel-container {
+            transition: transform 4s cubic-bezier(0.15, 0, 0.15, 1);
+        }
+
+        .hard-shadow {
+            box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+        }
+
+        .active-nav-item {
+            box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+        }
+
+        @keyframes gear-rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .slow-spin {
+            animation: gear-rotate 20s linear infinite;
+        }
+
+        .wheel-svg {
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+        }
+        
+        .segment-text {
+            fill: #FFFFFF;
+            font-family: 'Anton', sans-serif;
+            font-size: 3.8px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            paint-order: stroke;
+            stroke: #000000;
+            stroke-width: 0.25px;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-foundry-cream font-body-md text-industrial-black min-h-screen flex flex-col overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center px-4 h-16 w-full z-50 bg-industrial-black border-b-2 border-industrial-black sticky top-0">
+<button class="text-ridge-gold active:translate-y-0.5 transition-transform">
+<span class="material-symbols-outlined text-[32px]">menu</span>
+</button>
+<div class="font-headline-md text-headline-md-mobile text-ridge-gold uppercase tracking-widest">
+        RIDGE HALL AMBLER
+    </div>
+<button class="text-ridge-gold active:translate-y-0.5 transition-transform">
+<span class="material-symbols-outlined text-[32px]">account_circle</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow relative overflow-hidden flex flex-col items-center justify-center py-12 px-4 md:px-margin-desktop">
+<!-- Atmospheric Background Elements -->
+<div class="absolute top-0 left-0 w-full h-full grunge-overlay z-0"></div>
+<div class="absolute top-0 left-0 w-full h-full brand-image-overlay z-0"></div>
+<div class="absolute -top-24 -left-24 w-64 h-64 border-4 border-industrial-black rounded-full opacity-10 slow-spin gear-teeth"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 border-4 border-industrial-black rounded-full opacity-10 slow-spin gear-teeth" style="animation-direction: reverse;"></div>
+<!-- Section Title -->
+<div class="z-10 text-center mb-12">
+<h1 class="font-headline-xl text-[48px] md:text-headline-xl uppercase text-industrial-black leading-none mb-2">CAN'T DECIDE?</h1>
+<p class="font-label-xl text-heritage-red uppercase tracking-tighter">LET THE INDUSTRIAL ENGINE CHOOSE YOUR BITE</p>
+</div>
+<!-- The Gear Decider Component -->
+<div class="relative z-10 w-full max-w-[500px] aspect-square flex items-center justify-center">
+<!-- Pointer -->
+<div class="absolute -top-4 z-50 text-heritage-red drop-shadow-[0_2px_0_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined text-[64px]" style="font-variation-settings: 'FILL' 1;">arrow_drop_down</span>
+</div>
+<!-- The Wheel (Gear Style Rebuilt for 10 Segments) -->
+<div class="wheel-container relative w-full h-full rounded-full border-[6px] border-industrial-black bg-industrial-black overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.4)]" id="decider-wheel"><svg class="w-full h-full wheel-svg" viewbox="0 0 100 100"><g transform="rotate(-18 50 50)"><path d="M50 50 L50 0 A50 50 0 0 1 79.39 9.55 Z" fill="#E0AA3D" stroke="#1b1b1b" stroke-width="0.3"></path><path d="M50 50 L79.39 9.55 A50 50 0 0 1 97.55 34.55 Z" fill="#9F1D21" stroke="#1b1b1b" stroke-width="0.3"></path><path d="M50 50 L97.55 34.55 A50 50 0 0 1 97.55 65.45 Z" fill="#E0AA3D" stroke="#1b1b1b" stroke-width="0.3"></path><path d="M50 50 L97.55 65.45 A50 50 0 0 1 79.39 90.45 Z" fill="#9F1D21" stroke="#1b1b1b" stroke-width="0.3"></path><path d="M50 50 L79.39 90.45 A50 50 0 0 1 50 100 Z" fill="#E0AA3D" stroke="#1b1b1b" stroke-width="0.3"></path><path d="M50 50 L50 100 A50 50 0 0 1 20.61 90.45 Z" fill="#9F1D21" stroke="#1b1b1b" stroke-width="0.3"></path><path d="M50 50 L20.61 90.45 A50 50 0 0 1 2.45 65.45 Z" fill="#E0AA3D" stroke="#1b1b1b" stroke-width="0.3"></path><path d="M50 50 L2.45 65.45 A50 50 0 0 1 2.45 34.55 Z" fill="#9F1D21" stroke="#1b1b1b" stroke-width="0.3"></path><path d="M50 50 L2.45 34.55 A50 50 0 0 1 20.61 9.55 Z" fill="#E0AA3D" stroke="#1b1b1b" stroke-width="0.3"></path><path d="M50 50 L20.61 9.55 A50 50 0 0 1 50 0 Z" fill="#9F1D21" stroke="#1b1b1b" stroke-width="0.3"></path></g></svg><svg class="absolute inset-0 w-full h-full pointer-events-none" viewbox="0 0 100 100"><g transform="rotate(0 50 50)"><text class="segment-text" text-anchor="middle" transform="rotate(0 50 50) translate(0 -32)">TWISTED GINGERS</text><text class="segment-text" text-anchor="middle" transform="rotate(36 50 50) translate(0 -32)">DOUBLE DOWN</text><text class="segment-text" text-anchor="middle" transform="rotate(72 50 50) translate(0 -32)">2 STREET SAMMIES</text><text class="segment-text" text-anchor="middle" transform="rotate(108 50 50) translate(0 -32)">LUCKY'S ROADSIDE</text><text class="segment-text" text-anchor="middle" transform="rotate(144 50 50) translate(0 -32)">PHO MI PLEASE</text><text class="segment-text" text-anchor="middle" transform="rotate(180 50 50) translate(0 -32)">PA GENERAL STORE</text><text class="segment-text" text-anchor="middle" transform="rotate(216 50 50) translate(0 -32)">WANNA SPOON</text><text class="segment-text" text-anchor="middle" transform="rotate(252 50 50) translate(0 -32)">MARY'S CHICKEN</text><text class="segment-text" text-anchor="middle" transform="rotate(288 50 50) translate(0 -32)">TOP DOG COCKTAILS</text><text class="segment-text" text-anchor="middle" transform="rotate(324 50 50) translate(0 -32)">CHAR LOBSTER ROLLS</text></g></svg></div>
+<!-- Central Hub / Spin Button -->
+<button class="absolute z-[60] w-32 h-32 md:w-40 md:h-40 rounded-full bg-industrial-black border-4 border-ridge-gold flex flex-col items-center justify-center active:scale-95 transition-transform hard-shadow" id="spin-button">
+<span class="font-headline-md text-ridge-gold leading-none">SPIN</span>
+<span class="font-label-md text-stark-white">TO DECIDE</span>
+</button>
+</div>
+<!-- Result Card (Hidden Initially) -->
+<div class="z-20 mt-12 opacity-0 transform translate-y-8 transition-all duration-500 max-w-sm w-full bg-stark-white border-2 border-industrial-black p-6 hard-shadow text-center" id="result-display">
+<h3 class="font-label-xl text-heritage-red uppercase mb-2">LUNCH IS SERVED!</h3>
+<div class="font-headline-md text-industrial-black uppercase mb-4" id="result-name">LUCKY'S ROADSIDE</div>
+<button class="w-full bg-heritage-red text-stark-white py-3 font-label-xl uppercase border-2 border-industrial-black hover:bg-industrial-black transition-colors">
+            VIEW MENU
+        </button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center bg-industrial-black py-2 px-2 border-t-2 border-industrial-black md:hidden">
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">home_app_logo</span>
+<span class="font-label-md text-label-md uppercase">HUB</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-label-md text-label-md uppercase">VENDORS</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-heritage-red text-stark-white rounded-none p-2 border-2 border-industrial-black active-nav-item" href="#">
+<span class="material-symbols-outlined">casino</span>
+<span class="font-label-md text-label-md uppercase">DECIDE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label-md text-label-md uppercase">JOURNAL</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">loyalty</span>
+<span class="font-label-md text-label-md uppercase">REWARDS</span>
+</a>
+</nav>
+<script>
+    const wheel = document.getElementById('decider-wheel');
+    const spinBtn = document.getElementById('spin-button');
+    const resultDisplay = document.getElementById('result-display');
+    const resultName = document.getElementById('result-name');
+
+    const vendors = [
+        "TWISTED GINGERS",
+        "PA GENERAL STORE",
+        "2 STREET SAMMIES",
+        "WANNA SPOON",
+        "TOP DOG COCKTAILS",
+        "MARY'S CHICKEN",
+        "DOUBLE DOWN KITCHEN",
+        "LUCKY'S ROADSIDE",
+        "CHAR LOBSTER ROLLS",
+        "PHO MI PLEASE"
+    ];
+
+    let currentRotation = 0;
+    let isSpinning = false;
+
+    spinBtn.addEventListener('click', () => {
+        if (isSpinning) return;
+
+        isSpinning = true;
+        resultDisplay.classList.add('opacity-0', 'translate-y-8');
+        
+        // Randomly spin between 3 and 7 full rotations plus a random segment
+        const extraDegrees = Math.floor(Math.random() * 360);
+        const totalDegrees = 1440 + extraDegrees; // 4 full turns + random
+        
+        currentRotation += totalDegrees;
+        wheel.style.transform = `rotate(${currentRotation}deg)`;
+
+        // Wait for animation to finish
+        setTimeout(() => {
+            isSpinning = false;
+            
+            // Calculate which vendor it landed on
+            // 360 degrees / 10 segments = 36 degrees per segment
+            const actualDegrees = currentRotation % 360;
+            // Adjustment for pointer at top. 
+            // Segment 0 (Twisted Gingers) is at 0 degrees.
+            // Wheel spins clockwise, so a rotation of 'x' degrees moves 
+            // the segments counter-clockwise relative to the pointer.
+            const segmentIndex = Math.floor(((360 - actualDegrees + 18) % 360) / 36);
+            
+            resultName.innerText = vendors[segmentIndex];
+            resultDisplay.classList.remove('opacity-0', 'translate-y-8');
+            
+            // Trigger celebratory micro-interaction
+            resultDisplay.classList.add('scale-105');
+            setTimeout(() => resultDisplay.classList.remove('scale-105'), 200);
+        }, 4000);
+    });
+</script>
+</body></html>

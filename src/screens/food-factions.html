@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>RIDGE HALL AMBLER | Food Factions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#7c000e",
+                    "surface-bright": "#f9f9f9",
+                    "primary-container": "#9f1d21",
+                    "on-tertiary-fixed-variant": "#004c6b",
+                    "on-secondary-container": "#745200",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#5e4200",
+                    "inverse-on-surface": "#f1f1f1",
+                    "on-tertiary-container": "#8ecdf5",
+                    "on-secondary-fixed": "#271900",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#f6bd4f",
+                    "on-surface-variant": "#59413f",
+                    "tertiary-fixed": "#c6e7ff",
+                    "on-secondary": "#ffffff",
+                    "heritage-red": "#9F1D21",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#8fcef6",
+                    "on-surface": "#1b1b1b",
+                    "inverse-surface": "#303030",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "surface": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "outline": "#8d706e",
+                    "on-primary-container": "#ffb1ab",
+                    "secondary-fixed": "#ffdea7",
+                    "surface-dim": "#dadada",
+                    "on-background": "#1b1b1b",
+                    "industrial-black": "#000000",
+                    "primary-fixed": "#ffdad7",
+                    "on-tertiary-fixed": "#001e2d",
+                    "foundry-cream": "#E0D0A5",
+                    "tertiary": "#00405a",
+                    "surface-tint": "#b12b2c",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#ffb3ad",
+                    "secondary": "#7c5800",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-container-high": "#e8e8e8",
+                    "on-primary-fixed": "#410004",
+                    "error-container": "#ffdad6",
+                    "ridge-gold": "#E0AA3D",
+                    "surface-variant": "#e2e2e2",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#e1bfbb",
+                    "on-primary-fixed-variant": "#8f0f17",
+                    "surface-container-highest": "#e2e2e2",
+                    "tertiary-container": "#00587b",
+                    "secondary-container": "#ffc656",
+                    "stark-white": "#FFFFFF"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "section-gap": "80px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "border-width": "2px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg": ["Anton"],
+                    "headline-lg-mobile": ["Anton"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-xl": ["Anton"],
+                    "label-md": ["Anton"],
+                    "headline-xl": ["Anton"],
+                    "headline-md": ["Anton"],
+                    "caption": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "label-xl": ["24px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                    "headline-xl": ["80px", {"lineHeight": "88px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        .industrial-texture {
+            background-image: url("https://www.transparenttextures.com/patterns/dark-matter.png");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+
+        .hard-shadow {
+            box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+        }
+
+        .hard-shadow-hover:hover {
+            box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+            transform: translate(-4px, -4px);
+        }
+
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 24px;
+        }
+
+        @media (max-width: 768px) {
+            .bento-grid {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-foundry-cream font-body-md text-industrial-black min-h-screen relative overflow-x-hidden">
+<!-- Grunge Overlay -->
+<div class="fixed inset-0 industrial-texture z-0"></div>
+<!-- Top Navigation -->
+<header class="bg-industrial-black text-stark-white border-b-2 border-industrial-black fixed top-0 w-full z-50 flex justify-between items-center px-4 md:px-margin-desktop h-16">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-ridge-gold cursor-pointer">menu</span>
+<h1 class="font-headline-md text-headline-md-mobile text-ridge-gold uppercase tracking-widest">RIDGE HALL AMBLER</h1>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<nav class="flex gap-6 font-label-md text-label-md uppercase">
+<a class="text-ridge-gold hover:text-stark-white transition-colors" href="#">Hub</a>
+<a class="text-stark-white hover:text-ridge-gold transition-colors" href="#">Vendors</a>
+<a class="text-stark-white hover:text-ridge-gold transition-colors" href="#">Decide</a>
+<a class="text-stark-white hover:text-ridge-gold transition-colors" href="#">Journal</a>
+</nav>
+<span class="material-symbols-outlined text-stark-white">account_circle</span>
+</div>
+<div class="md:hidden">
+<span class="material-symbols-outlined text-stark-white">account_circle</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="relative z-10 pt-24 pb-32 px-4 md:px-margin-desktop max-w-[1440px] mx-auto">
+<!-- Hero Section -->
+<section class="mb-section-gap">
+<div class="flex flex-col md:flex-row gap-gutter items-end mb-12">
+<div class="flex-1">
+<h2 class="font-headline-xl text-headline-xl text-heritage-red uppercase leading-none mb-4">FOOD FACTIONS UNITE</h2>
+<p class="font-body-lg text-body-lg max-w-2xl border-l-4 border-industrial-black pl-6">
+                        Welcome to the foundry. 10+ legendary eateries forged in flavor. Whether it's street food, craft brews, or high-tier seafood, we serve it with industrial grit.
+                    </p>
+</div>
+<div class="flex flex-wrap gap-2 md:mb-2">
+<div class="bg-industrial-black text-ridge-gold px-4 py-2 font-label-xl text-label-xl uppercase border-2 border-industrial-black">
+                        10+ SPOTS
+                    </div>
+<div class="bg-heritage-red text-stark-white px-4 py-2 font-label-xl text-label-xl uppercase border-2 border-industrial-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+                        OPEN NOW
+                    </div>
+</div>
+</div>
+<!-- Search & Filters -->
+<div class="bg-industrial-black p-4 mb-12 border-2 border-industrial-black flex flex-col md:flex-row gap-4">
+<div class="relative flex-1">
+<input class="w-full bg-stark-white border-2 border-industrial-black p-3 font-label-md uppercase focus:ring-0 focus:border-ridge-gold" placeholder="SEARCH VENDORS..." type="text"/>
+<span class="material-symbols-outlined absolute right-3 top-3 text-industrial-black">search</span>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-2 md:pb-0">
+<button class="bg-ridge-gold text-industrial-black px-6 py-2 font-label-md uppercase border-2 border-industrial-black transition-all active:translate-y-1">All</button>
+<button class="bg-stark-white text-industrial-black px-6 py-2 font-label-md uppercase border-2 border-industrial-black hover:bg-heritage-red hover:text-stark-white transition-all">Brews</button>
+<button class="bg-stark-white text-industrial-black px-6 py-2 font-label-md uppercase border-2 border-industrial-black hover:bg-heritage-red hover:text-stark-white transition-all">Seafood</button>
+<button class="bg-stark-white text-industrial-black px-6 py-2 font-label-md uppercase border-2 border-industrial-black hover:bg-heritage-red hover:text-stark-white transition-all">Street Food</button>
+<button class="bg-stark-white text-industrial-black px-6 py-2 font-label-md uppercase border-2 border-industrial-black hover:bg-heritage-red hover:text-stark-white transition-all">Comfort</button>
+</div>
+</div>
+<!-- Bento Grid of Vendors -->
+<div class="bento-grid">
+<!-- Featured Vendor: Twisted Gingers Brewing Co -->
+<div class="md:col-span-8 bg-stark-white border-2 border-industrial-black hard-shadow p-6 flex flex-col md:flex-row gap-8 relative overflow-hidden group transition-all duration-300">
+<div class="absolute top-0 right-0 bg-heritage-red text-stark-white font-label-md px-4 py-2 z-20 uppercase border-l-2 border-b-2 border-industrial-black">
+                        FEATURED / NOW OPEN
+                    </div>
+<div class="w-full md:w-1/2 aspect-square md:aspect-video relative overflow-hidden border-2 border-industrial-black bg-industrial-black flex items-center justify-center">
+<img alt="Twisted Gingers Brewing Logo" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLuC9MHmzEmUKpqf02wb5eefGuFvFRRnHm-WnW_YEOF4_m8a8sGEDVlPZNteKVN9NT_66928HuJNq6_g2iTCPhc1icDn9WuL0GahOQ4WUB4ZnMhgunP4KaDdZO8dkzf_RRJPy9RwCK-0XjfSbRLRTOW0uFEk0ZXR9-LV_gVzuQUgIwuvl_BQVRvU-Tu62JLIAoTI-nCajA1fd6Nm0iWaGc5HkzkGDYjOMcu6fVpBG9cHbEn0lSZYHexLbDQd"/>
+<img alt="Twisted Gingers Brewing Logo" class="relative z-10 w-4/5 h-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLtk0KZ_GgwY9ituiIRlseOIpmPahbgz4s8oesowAQqVI7cI0OtNPzlZkjTusa4B3BNmAl2v-yicki9cgjw--mwORLDDhZ256eZYyp0y69BPy1wFA-3hsdLkr_fpMwHI70yFQ6sqP9tpHxJt4O_5hHZwo5iRl0LuunUQZv4fC6t_V_Oay2LxuN4gYs9hLGEKxG0IoHjZ6-Y03L7BfpdBqoCQW1brM3_hH27uE3FhXzD9L54GBqhoYX4w_kKT"/>
+</div>
+<div class="w-full md:w-1/2 flex flex-col justify-center">
+<h3 class="font-headline-lg text-headline-lg text-heritage-red uppercase mb-2">TWISTED GINGERS BREWING CO</h3>
+<p class="font-body-md text-body-md mb-6">Celebrate life with a twist. Hand-crafted small-batch brews forged with local ingredients. A true foundry original.</p>
+<div class="flex gap-4">
+<button class="bg-industrial-black text-stark-white px-8 py-3 font-label-xl text-label-xl uppercase border-2 border-industrial-black hover:bg-ridge-gold hover:text-industrial-black transition-all">ORDER</button>
+<button class="border-2 border-industrial-black px-8 py-3 font-label-xl text-label-xl uppercase hover:bg-industrial-black hover:text-stark-white transition-all">DETAILS</button>
+</div>
+</div>
+</div>
+<!-- Vendor: Pho Mi Please -->
+<div class="md:col-span-4 bg-industrial-black border-2 border-industrial-black hard-shadow p-6 flex flex-col group transition-all duration-300">
+<div class="w-full h-48 bg-ridge-gold mb-6 relative overflow-hidden border-2 border-stark-white">
+<img alt="Vietnamese Street Food" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLvLOkUgH7jzGanMRr1ghGjtein6Lx28uSX4spN0PAbnqhO6db6aL1eTEcSAsNsmfszSOG6hVFus-WARIPV1jtISUALwvp-sxULWE9lBfRHiexho4egqZzjF7T-rdYirQPM70G9YYZHymi6yttjCtA2nwCwe_3cIVRrd0-vnqtmGSIiCZ8Ded-MOyWpk3XnbqlBxdiu77kO9urpO4v5ATuRD_YOiBf516zKTDKpRaQGdJWqgfKdC-BlwI-8"/>
+<div class="absolute inset-0 bg-industrial-black/20"></div>
+</div>
+<h3 class="font-headline-md text-stark-white uppercase mb-2">PHO MI PLEASE</h3>
+<p class="font-caption text-ridge-gold mb-4 uppercase">VIETNAMESE STREET FOOD • OPEN NOW</p>
+<button class="mt-auto w-full bg-heritage-red text-stark-white py-3 font-label-md uppercase border-2 border-stark-white hover:bg-stark-white hover:text-industrial-black transition-all">VIEW MENU</button>
+</div>
+<!-- Vendor: Lobster Rolls & More -->
+<div class="md:col-span-4 bg-stark-white border-2 border-industrial-black hard-shadow p-6 flex flex-col group transition-all duration-300">
+<div class="w-full h-48 bg-surface-container mb-6 border-2 border-industrial-black relative overflow-hidden">
+<img alt="Fresh Lobster Roll" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLvNgOIF-bbfaZ62vz9OxZLydA0o4pNlvm_yiOdjuRrg93VsUERbjOL1dk3QP_VCfhy-s7BcZ7wPlPUU_ql-pzdI7YV9ATHeXLFX5_aCSwiDVRj0cLVRRyGYK02Y-kMLwBhR-avEbTivJWYlsU3OEvcNzguojy2ZAMsE4P0JB8DGOw4pBYLZQ8JbV3TjHALs0v0wCgtehdZVjy1nW94DcSJ2qBCSEd4b0GF_ZhWHKW6Uk7QyFT3qDHkvAVow"/>
+<div class="absolute bottom-0 left-0 bg-industrial-black text-stark-white p-2 font-label-md uppercase">SEAFOOD</div>
+</div>
+<h3 class="font-headline-md text-heritage-red uppercase mb-2">LOBSTER ROLLS &amp; MORE</h3>
+<p class="font-body-md text-body-md mb-6">Premium coastal catches. Fresh lobster, buttery rolls, and seaside flavors in the heart of Ambler.</p>
+<button class="mt-auto w-full bg-industrial-black text-stark-white py-3 font-label-md uppercase border-2 border-industrial-black hover:bg-ridge-gold hover:text-industrial-black transition-all">VIEW MENU</button>
+</div>
+<!-- Vendor: Lucky's Roadside Stand -->
+<div class="md:col-span-4 bg-heritage-red border-2 border-industrial-black hard-shadow p-6 flex flex-col text-stark-white group transition-all duration-300">
+<div class="w-full h-48 bg-industrial-black mb-6 border-2 border-stark-white relative overflow-hidden">
+<img alt="Gourmet Sliders" class="w-full h-full object-cover group-hover:opacity-80 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLu2Wra8nZgaE87ROoHAa8TOYEVXotEFCKi9NsuHcCz8TtEsa0OU3-Zfgez5Gcfvia2hXpqix6WJedw3EWbbQz4TMWs7kXR2YngBEthaSbTRW2zocLlo5Rgzo8eTsAufJFHBCjcRuseBYGKW8mgzykWGJD4Z96P7RmSQ3vcM83rKQZQ6lC5SaiCZlHSB8qPyhf6Pxyfp-AuVKf7Se8uO9tQCrZSQBO8C4ZhsvUrYg65XdQ8x4CHSMgCg5_LY"/>
+</div>
+<h3 class="font-headline-md uppercase mb-2">LUCKY'S ROADSIDE STAND</h3>
+<p class="font-body-md mb-6">Classic American road-trip favorites. Smash burgers and bites forged in iron for the modern nomad.</p>
+<button class="mt-auto w-full bg-stark-white text-heritage-red py-3 font-label-md uppercase border-2 border-industrial-black hover:bg-industrial-black hover:text-stark-white transition-all">VIEW MENU</button>
+</div>
+<!-- Vendor: Double Down Kitchen -->
+<div class="md:col-span-4 bg-foundry-cream border-2 border-industrial-black hard-shadow p-6 flex flex-col group transition-all duration-300">
+<div class="w-full h-48 bg-industrial-black mb-6 border-2 border-industrial-black relative overflow-hidden">
+<img alt="Double Down Specialties" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLuIxO7FGIFek2nZvkOpnbPe1dK8lOAoOkCJxKwqDVlACZxxe8-75BHCwDiT0dWdKznDid5oCAr8QzKYkB4fHHqhZRc-Qw3MWMHyDdBByBMCVFRlX87FNElg9uMALCrGTnZCGaXYJrIVseqWEsNoocyYiI30hFtFWsQ0s2vpYuRGfNRy2bkbkN-glMhxMSO7QE0I5wZayM7OgChLaXFHNd0xfrGkMqJDEFtUdjfNhu_QhDR2VUE_d2khsHo"/>
+</div>
+<h3 class="font-headline-md text-industrial-black uppercase mb-2">DOUBLE DOWN KITCHEN</h3>
+<p class="font-body-md text-industrial-black mb-6">High-stakes flavor. Bold, experimental dishes that go all-in on taste and texture.</p>
+<button class="mt-auto w-full border-2 border-industrial-black py-3 font-label-md uppercase hover:bg-heritage-red hover:text-stark-white transition-all">VIEW MENU</button>
+</div>
+<!-- Vendor: Mary's Chicken Strip Club -->
+<div class="md:col-span-4 bg-stark-white border-2 border-industrial-black hard-shadow p-6 flex flex-col group transition-all duration-300">
+<div class="w-full h-48 bg-surface-container mb-6 border-2 border-industrial-black relative overflow-hidden">
+<img alt="Crispy Fried Chicken" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida/AP1WRLvFAfrEMsAa38K66xZ9y5wpxfM5oaJKl4q8XkHojl_vaa0zSwkoGyLRM7ZdvKocR7A6H1piXbq65KtJltNi1oS6YlJP3iSTHYzvhYjh-8nXtgfkrMDQX30lkqjuC_KZK-R3pVcxrsukXiah7alOnSiSDENdXe5tK6vYgUvtngY-YII_8jD2x156OB-KMtKlUvRFEjfy1_jqYsqhkssoveJOQOZzniugYh_59jvFJGR62cSY81nVoZxdqe4"/>
+</div>
+<h3 class="font-headline-md text-heritage-red uppercase mb-2">MARY'S CHICKEN STRIP CLUB</h3>
+<p class="font-body-md text-body-md mb-6">The elite choice for crispy, hand-breaded chicken. Prime cuts, secret spices, no filler.</p>
+<button class="mt-auto w-full bg-industrial-black text-stark-white py-3 font-label-md uppercase border-2 border-industrial-black hover:bg-ridge-gold hover:text-industrial-black transition-all">VIEW MENU</button>
+</div>
+<!-- Vendor: Top Dog Cocktails -->
+<div class="md:col-span-4 bg-industrial-black border-2 border-industrial-black hard-shadow p-6 flex flex-col group transition-all duration-300">
+<div class="w-full h-48 bg-ridge-gold mb-6 relative overflow-hidden border-2 border-stark-white">
+<img alt="Craft Cocktails" class="w-full h-full object-cover group-hover:opacity-70 transition-opacity" src="https://lh3.googleusercontent.com/aida/AP1WRLuS0I-zDhgblyT-dA9LqOG9mcy35hhYmB3z1nMoVKWfWh1Si4oZE9EdzXzVGKDY0ft_quY8MxKVUQrdPAD25e0jmvFpZJDVRC9LDwKHu6RPJqGHFprZ3wxlbnScrCBbTiM2sPWW6bCeI__MFPhCyWy6xMH8ZhMRsEINttQJA0J5X3QRjPHFl1ZwM-N_4m0w5X7ruFdYBy0E8I_ifoc7Jb6LloZDfS03CMquf6Ef9xlmdbTXl7piz5W5lkQC"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-stark-white text-6xl">local_bar</span>
+</div>
+</div>
+<h3 class="font-headline-md text-stark-white uppercase mb-2">TOP DOG COCKTAILS</h3>
+<p class="font-caption text-ridge-gold mb-4 uppercase">CRAFT SPIRITS • SOCIAL HUB</p>
+<button class="mt-auto w-full bg-heritage-red text-stark-white py-3 font-label-md uppercase border-2 border-stark-white hover:bg-stark-white hover:text-industrial-black transition-all">DRINKS MENU</button>
+</div>
+<!-- Vendor: PA General Store & Wanna Spoon -->
+<div class="md:col-span-4 bg-foundry-cream border-2 border-industrial-black hard-shadow p-6 flex flex-col relative group overflow-hidden">
+<div class="mb-4">
+<h4 class="font-label-xl text-heritage-red uppercase mb-2">PENNSYLVANIA GENERAL STORE</h4>
+<p class="font-caption uppercase mb-4">Local Provisions &amp; Gifts</p>
+<div class="h-px bg-industrial-black w-full mb-4"></div>
+<h4 class="font-label-xl text-industrial-black uppercase mb-2">WANNA SPOON</h4>
+<p class="font-caption uppercase">Artisanal Treats &amp; Sweets</p>
+</div>
+<p class="font-body-md text-industrial-black mb-8 italic">The perfect end to a Faction feast. Local goods and sweet rewards.</p>
+<button class="mt-auto w-full border-2 border-industrial-black py-3 font-label-md uppercase hover:bg-industrial-black hover:text-stark-white transition-all">EXPLORE MORE</button>
+</div>
+</div>
+</section>
+<!-- Aesthetic Divider -->
+<div class="w-full h-px bg-industrial-black mb-section-gap relative">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-foundry-cream px-8 py-2 border-2 border-industrial-black font-headline-md uppercase text-heritage-red">
+                EST. 2025 AMBLER
+            </div>
+</div>
+<!-- Secondary Section: Journal/Events -->
+<section class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<div class="border-2 border-industrial-black p-8 bg-stark-white hard-shadow">
+<h4 class="font-headline-lg text-heritage-red uppercase mb-6">LATEST FROM THE FORGE</h4>
+<div class="space-y-6">
+<div class="border-b-2 border-industrial-black pb-4 hover:pl-2 transition-all">
+<span class="font-caption text-industrial-black opacity-60 uppercase">March 12, 2025</span>
+<h5 class="font-label-xl text-label-xl uppercase mt-1">NEW VENDOR: LOBSTER ROLLS &amp; MORE JOINING THE FACTION</h5>
+</div>
+<div class="border-b-2 border-industrial-black pb-4 hover:pl-2 transition-all">
+<span class="font-caption text-industrial-black opacity-60 uppercase">March 08, 2025</span>
+<h5 class="font-label-xl text-label-xl uppercase mt-1">TASTING EVENT: CRAFT BEER &amp; SLIDERS IN THE COURTYARD</h5>
+</div>
+</div>
+</div>
+<div class="relative overflow-hidden border-2 border-industrial-black group">
+<img class="w-full h-full object-cover" data-alt="A wide angle shot of a bustling industrial-style dining hall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDeEjuDb0IZTNXn1-IpqyO_dz0z55VQDKANSKKfZUfee7ZvaU98cFPINq1vD2AHcrHzlY1m8rRW1n3iEWpTXmQDxRrn0bu-VG_Aymmimc05rWhPjMwaaeNQ_ie47-6X2o5z3Ic3fl7Z9Bt6KfRODjbGml-mMb9TtGOwMOV7_ao3kUfGhE-H6VMvVI2u9HKGEfqTqoZWvCDMPfrfe0A6i3VCBTF9Jq4N-amQpz57sp_v3X2EWo4hW3XbvPFL3CYqu-_0KEaYA7vl312v"/>
+<div class="absolute inset-0 bg-heritage-red bg-opacity-40 flex items-center justify-center">
+<div class="text-center p-8 bg-industrial-black text-stark-white border-2 border-stark-white max-w-xs hard-shadow">
+<h4 class="font-headline-md uppercase mb-4">HOST AT RIDGE</h4>
+<p class="font-body-md mb-6">Corporate events or social takeovers. We provide the heat.</p>
+<button class="w-full bg-ridge-gold text-industrial-black py-2 font-label-md uppercase font-bold">INQUIRE NOW</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Area -->
+<footer class="bg-industrial-black text-stark-white pt-16 pb-32 px-4 md:px-margin-desktop relative z-10 border-t-4 border-heritage-red">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-gutter">
+<div class="md:col-span-2">
+<h2 class="font-headline-xl text-ridge-gold uppercase mb-8 leading-tight">RIDGE HALL<br/>AMBLER</h2>
+<div class="flex gap-4 mb-8">
+<a class="w-12 h-12 border-2 border-stark-white flex items-center justify-center hover:bg-ridge-gold transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+<a class="w-12 h-12 border-2 border-stark-white flex items-center justify-center hover:bg-ridge-gold transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+</a>
+</div>
+</div>
+<div>
+<h6 class="font-label-xl text-heritage-red uppercase mb-6">LOCATION</h6>
+<p class="font-body-lg mb-2">15 S RIDGE AVE, AMBLER, PA</p>
+<p class="font-body-lg mb-8">INFO@RIDGEHALLAMBLER.COM</p>
+<h6 class="font-label-xl text-heritage-red uppercase mb-4">HOURS</h6>
+<p class="font-body-md">MON-THU: 11AM - 9PM</p>
+<p class="font-body-md">FRI-SAT: 11AM - 11PM</p>
+<p class="font-body-md">SUN: 10AM - 8PM</p>
+</div>
+<div>
+<h6 class="font-label-xl text-heritage-red uppercase mb-6">NEWSLETTER</h6>
+<p class="font-body-md mb-4 uppercase">SIGN UP FOR THE LATEST REWARDS &amp; FACTION UPDATES</p>
+<div class="flex flex-col gap-2">
+<input class="bg-stark-white text-industrial-black border-2 border-industrial-black p-3 font-label-md" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="bg-heritage-red text-stark-white py-3 font-label-xl uppercase border-2 border-stark-white hover:bg-ridge-gold hover:text-industrial-black transition-all shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] active:shadow-none active:translate-x-1 active:translate-y-1">SUBSCRIBE</button>
+</div>
+</div>
+</div>
+<div class="max-w-[1440px] mx-auto mt-16 pt-8 border-t border-stark-white border-opacity-20 flex flex-col md:flex-row justify-between font-caption uppercase opacity-60">
+<span>© 2025 - RIDGE HALL AMBLER. ALL RIGHTS RESERVED.</span>
+<span>DESIGNED BY BRANDOPTICS.</span>
+</div>
+</footer>
+<!-- Mobile Navigation Bar -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center bg-industrial-black py-2 px-2 md:hidden border-t-2 border-industrial-black">
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">home_app_logo</span>
+<span class="font-label-md text-[10px] mt-1">HUB</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-heritage-red text-stark-white rounded-none p-2 border-2 border-industrial-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-label-md text-[10px] mt-1">VENDORS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">casino</span>
+<span class="font-label-md text-[10px] mt-1">DECIDE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label-md text-[10px] mt-1">JOURNAL</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">loyalty</span>
+<span class="font-label-md text-[10px] mt-1">REWARDS</span>
+</a>
+</nav>
+<script>
+        // Simple micro-interaction for vendor cards
+        document.querySelectorAll('.bento-grid > div').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                // Potential for more complex animations if needed
+            });
+        });
+    </script>
+</body></html>

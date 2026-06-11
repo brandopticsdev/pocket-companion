@@ -1,0 +1,14 @@
+{
+  "name": "Ridge Hall Ambler",
+  "short_name": "Ridge Hall",
+  "description": "Ridge Hall Ambler — food hall, factions, and foundry pass.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#E0D0A5",
+  "theme_color": "#000000",
+  "icons": [
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

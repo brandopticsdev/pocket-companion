@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>THE FACTORY | RIDGE HALL AMBLER</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Hanken+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "primary": "#7c000e",
+                    "surface-bright": "#f9f9f9",
+                    "primary-container": "#9f1d21",
+                    "on-tertiary-fixed-variant": "#004c6b",
+                    "on-secondary-container": "#745200",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#5e4200",
+                    "inverse-on-surface": "#f1f1f1",
+                    "on-tertiary-container": "#8ecdf5",
+                    "on-secondary-fixed": "#271900",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#f6bd4f",
+                    "on-surface-variant": "#59413f",
+                    "tertiary-fixed": "#c6e7ff",
+                    "on-secondary": "#ffffff",
+                    "heritage-red": "#9F1D21",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#8fcef6",
+                    "on-surface": "#1b1b1b",
+                    "inverse-surface": "#303030",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container": "#eeeeee",
+                    "surface": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "outline": "#8d706e",
+                    "on-primary-container": "#ffb1ab",
+                    "secondary-fixed": "#ffdea7",
+                    "surface-dim": "#dadada",
+                    "on-background": "#1b1b1b",
+                    "industrial-black": "#000000",
+                    "primary-fixed": "#ffdad7",
+                    "on-tertiary-fixed": "#001e2d",
+                    "foundry-cream": "#E0D0A5",
+                    "tertiary": "#00405a",
+                    "surface-tint": "#b12b2c",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#ffb3ad",
+                    "secondary": "#7c5800",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-container-high": "#e8e8e8",
+                    "on-primary-fixed": "#410004",
+                    "error-container": "#ffdad6",
+                    "ridge-gold": "#E0AA3D",
+                    "surface-variant": "#e2e2e2",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "error": "#ba1a1a",
+                    "outline-variant": "#e1bfbb",
+                    "on-primary-fixed-variant": "#8f0f17",
+                    "surface-container-highest": "#e2e2e2",
+                    "tertiary-container": "#00587b",
+                    "secondary-container": "#ffc656",
+                    "stark-white": "#FFFFFF"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "8px",
+                    "section-gap": "80px",
+                    "margin-mobile": "16px",
+                    "gutter": "24px",
+                    "border-width": "2px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "body-md": ["Hanken Grotesk"],
+                    "headline-lg": ["Anton"],
+                    "headline-lg-mobile": ["Anton"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-xl": ["Anton"],
+                    "label-md": ["Anton"],
+                    "headline-xl": ["Anton"],
+                    "headline-md": ["Anton"],
+                    "caption": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["32px", {"lineHeight": "36px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "500"}],
+                    "label-xl": ["24px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "label-md": ["14px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "400"}],
+                    "headline-xl": ["80px", {"lineHeight": "88px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+                    "headline-md": ["32px", {"lineHeight": "36px", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .grunge-overlay {
+            position: relative;
+        }
+        .grunge-overlay::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+            opacity: 0.08;
+            pointer-events: none;
+            z-index: 10;
+        }
+        .hard-offset {
+            box-shadow: 6px 6px 0px 0px #000000;
+        }
+        .hard-offset-hover:hover {
+            box-shadow: 10px 10px 0px 0px #000000;
+            transform: translate(-4px, -4px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        input::placeholder, textarea::placeholder {
+            color: rgba(27, 27, 27, 0.4);
+            font-family: 'Anton', sans-serif;
+            letter-spacing: 0.05em;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-foundry-cream text-industrial-black font-body-md overflow-x-hidden grunge-overlay">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 w-full z-50 bg-industrial-black border-b-2 border-industrial-black sticky top-0">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-ridge-gold cursor-pointer">menu</span>
+<h1 class="font-headline-md text-[24px] md:text-headline-md text-ridge-gold uppercase tracking-widest">RIDGE HALL AMBLER</h1>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-label-md text-stark-white uppercase hover:text-ridge-gold transition-colors" href="#">HUB</a>
+<a class="font-label-md text-stark-white uppercase hover:text-ridge-gold transition-colors underline decoration-ridge-gold decoration-2 underline-offset-4" href="#">VENDORS</a>
+<a class="font-label-md text-stark-white uppercase hover:text-ridge-gold transition-colors" href="#">DECIDE</a>
+<a class="font-label-md text-stark-white uppercase hover:text-ridge-gold transition-colors" href="#">JOURNAL</a>
+</div>
+<span class="material-symbols-outlined text-stark-white cursor-pointer hover:text-ridge-gold">account_circle</span>
+</header>
+<main class="max-w-7xl mx-auto px-margin-mobile md:px-gutter py-8 space-y-16">
+<!-- Hero Section -->
+<section class="relative border-2 border-industrial-black bg-industrial-black overflow-hidden hard-offset">
+<div class="grid grid-cols-1 md:grid-cols-2">
+<div class="relative h-[400px] md:h-[600px] overflow-hidden border-b-2 md:border-b-0 md:border-r-2 border-industrial-black">
+<img alt="The Factory Interior" class="w-full h-full object-cover grayscale-[10%] hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida/AP1WRLtlgPoHZgaiwoQvntfLD3XlMn10DYBWZmEi8dkRoHGfcGJS3YFUlHVDn35KMuJKxLqhd3f1kJTsytb_yrnIpuiOy4rGD2tBtrhnTD1AP6rQnW_YqWZPAuFoxDRtX-zmtvdy0HuFWKu-fp-ZWQe6Ps7SVhT-gW3cQy4Irgti10Oe5tRzpRmtxJOO8_9N06BYoCY3g8cSsgwOnPhiUIr-9Zi7830RH52K4SvVWFoQMM1myeUu5otyRe3YXpyS"/>
+<div class="absolute inset-0 bg-gradient-to-t from-industrial-black/90 via-transparent to-transparent flex flex-col justify-end p-8">
+<span class="inline-block px-4 py-1 bg-ridge-gold text-industrial-black font-label-md uppercase mb-4 w-fit">Now Booking</span>
+<h2 class="font-headline-xl text-headline-lg-mobile md:text-headline-xl text-stark-white uppercase leading-none">THE FACTORY</h2>
+</div>
+</div>
+<div class="bg-stark-white p-8 md:p-12 flex flex-col justify-center space-y-6">
+<p class="font-body-lg text-body-lg text-industrial-black leading-relaxed">
+                        Forged in 1904, our premier event space blends raw industrial power with modern social elegance. From high-stakes corporate summits to legendary weddings, The Factory is the heavy-duty heart of Ambler's social scene.
+                    </p>
+<div class="space-y-4">
+<button class="w-full bg-heritage-red text-stark-white font-label-xl py-4 border-2 border-industrial-black hover:bg-industrial-black hover:text-ridge-gold transition-all hard-offset-hover uppercase">
+                            INQUIRE FOR BOOKING
+                        </button>
+<div class="flex items-center gap-4 text-industrial-black font-label-md uppercase">
+<span class="material-symbols-outlined">location_on</span>
+<span>Located within Ridge Hall Commons</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Venue Specs Grid (Updated with Images) -->
+<section class="space-y-8">
+<div class="flex items-baseline gap-4">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase text-industrial-black">VENUE SPECS</h3>
+<div class="h-1 flex-grow bg-industrial-black"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Capacity -->
+<div class="bg-stark-white border-2 border-industrial-black overflow-hidden hard-offset flex flex-col">
+<div class="h-48 overflow-hidden border-b-2 border-industrial-black">
+<img alt="Event Capacity" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLu9JT0KhCTRa2PjNenV35flAUe1tEHadFr6OaTjPrsJ9t0Yl0JjRtDUuR25qwJY6WzFbVSqW83I9QfvKkXu5cT3rmLf9IhID2s-F54fJY4Ov4Efe-hRiGuXNG484dCu_2UsyYhBwV-EVVEmDr_cXXax0xMagarDB5d7mQDO8-rr-fSJVIWIJ8Mufavhxj8-UOCWuUXZuHVoYDnET-hdiJE02LPMLhJ9jbfekh8b6U9_V4NKi3WTYGaS9xJS"/>
+</div>
+<div class="p-8 text-center space-y-4">
+<h4 class="font-label-xl text-label-xl uppercase">CAPACITY</h4>
+<p class="font-headline-md text-heritage-red uppercase">350 GUESTS</p>
+<p class="font-body-md">Flexible seating arrangements for cocktail hours, seated dinners, or theater-style presentations.</p>
+</div>
+</div>
+<!-- Space -->
+<div class="bg-stark-white border-2 border-industrial-black overflow-hidden hard-offset flex flex-col">
+<div class="h-48 overflow-hidden border-b-2 border-industrial-black">
+<img alt="Industrial Floor Space" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtSTzcYv7WzLhjuwo9my1WKoV6zEdbI0exm38T0OD2kfdpYJrqAhUzPUUjWqJy51KVZgYQtVhu5imr2-QoSs6z4oxmLtLtQYzEPvKf4MUvl_Fr_BLOIBmug49ZAHvQ_uAXUSMuZz2Cq-Ed7LkhdVbDlGk2xzQbS8AqrlOSbrXppgrdkLnpdl-uEIGUmKUCtCIqSfYs2kIWH6syUv1d--6evs_3sbsgWAoyhQawBRcvb6N8prZzPi18jnFLv"/>
+</div>
+<div class="p-8 text-center space-y-4">
+<h4 class="font-label-xl text-label-xl uppercase">FLOOR SPACE</h4>
+<p class="font-headline-md text-heritage-red uppercase">5,200 SQ FT</p>
+<p class="font-body-md">Vaulted industrial ceilings, polished concrete floors, and expansive exposed brick walls.</p>
+</div>
+</div>
+<!-- Service -->
+<div class="bg-stark-white border-2 border-industrial-black overflow-hidden hard-offset flex flex-col">
+<div class="h-48 overflow-hidden border-b-2 border-industrial-black">
+<img alt="Bar Service" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtA9CEZil5N33kBq5u0-mzIlo4tKrwnviekmsGGJl_-JvrtKZyxSxe8va_3YvH6U9UIw2HMH2JTSWRVkUBtdQJfDbcv2mL5opOlo7YkSBHfbm09efHJwSmjGuW9RVoRL4CkU3_ZeKpiv9JlSNJsFBWRPVMANUfd1-xa6OJBCgHM9muV5oxgeO3DaJPzG2iLusfjthfd2c9CvqU0JJ3EMYFkQHdiGUUAFhZZYN4dJs75E3Nk3jq2G1aOBwGf"/>
+</div>
+<div class="p-8 text-center space-y-4">
+<h4 class="font-label-xl text-label-xl uppercase">BAR SERVICE</h4>
+<p class="font-headline-md text-heritage-red uppercase">FULL SERVICE</p>
+<p class="font-body-md">Custom iron-pipe bar serving craft beers from Ridge Hall vendors and premium spirits.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Virtual Tour Preview (Preserving Structure with Content Alignment) -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-7 border-2 border-industrial-black relative overflow-hidden h-[400px] hard-offset">
+<img alt="Interactive Lounge Tour" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AP1WRLtlgPoHZgaiwoQvntfLD3XlMn10DYBWZmEi8dkRoHGfcGJS3YFUlHVDn35KMuJKxLqhd3f1kJTsytb_yrnIpuiOy4rGD2tBtrhnTD1AP6rQnW_YqWZPAuFoxDRtX-zmtvdy0HuFWKu-fp-ZWQe6Ps7SVhT-gW3cQy4Irgti10Oe5tRzpRmtxJOO8_9N06BYoCY3g8cSsgwOnPhiUIr-9Zi7830RH52K4SvVWFoQMM1myeUu5otyRe3YXpyS"/>
+<div class="absolute inset-0 bg-industrial-black/20 flex items-center justify-center">
+<button class="bg-stark-white border-2 border-industrial-black p-6 rounded-none flex items-center justify-center hover:scale-110 transition-transform hard-offset">
+<span class="material-symbols-outlined text-industrial-black scale-[2]" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-5 flex flex-col justify-center bg-industrial-black p-8 md:p-12 space-y-6">
+<h3 class="font-headline-lg text-headline-lg-mobile text-ridge-gold uppercase">VIRTUAL LOUNGE TOUR</h3>
+<p class="font-body-lg text-stark-white">Explore our cozy leather lounge corners and industrial-chic seating areas. This digital walkthrough showcases the grit and grace of our interior design.</p>
+<a class="inline-flex items-center gap-2 font-label-xl text-ridge-gold hover:underline uppercase" href="#">
+                    Launch Interactive Tour
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- Booking Inquiry Form (Refined for High-Contrast Industrial Form Styles) -->
+<section class="bg-stark-white border-2 border-industrial-black p-8 md:p-16 hard-offset relative">
+<div class="absolute top-0 left-0 bg-heritage-red text-stark-white px-8 py-2 font-label-md uppercase border-b-2 border-r-2 border-industrial-black">
+                Reservation Request
+            </div>
+<div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="space-y-6">
+<h3 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase text-industrial-black leading-tight">START YOUR ASSEMBLY</h3>
+<p class="font-body-lg text-industrial-black">Tell us about your event. Our team of coordinators will handle the heavy lifting to ensure your gathering is forged in excellence.</p>
+<div class="space-y-4 pt-4 border-t-2 border-industrial-black">
+<div class="flex items-center gap-4 group">
+<div class="p-2 bg-industrial-black text-ridge-gold">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span class="font-label-md uppercase border-b-2 border-transparent group-hover:border-heritage-red transition-all cursor-pointer">Events@RidgeHall.com</span>
+</div>
+<div class="flex items-center gap-4 group">
+<div class="p-2 bg-industrial-black text-ridge-gold">
+<span class="material-symbols-outlined">phone</span>
+</div>
+<span class="font-label-md uppercase border-b-2 border-transparent group-hover:border-heritage-red transition-all cursor-pointer">+1 (215) 555-0104</span>
+</div>
+</div>
+</div>
+<form class="space-y-6">
+<div class="space-y-2">
+<label class="font-label-md uppercase text-industrial-black block">Full Name</label>
+<input class="w-full border-2 border-industrial-black p-4 focus:ring-0 focus:border-heritage-red focus:bg-white outline-none bg-foundry-cream/20 font-label-md uppercase" placeholder="ENTER NAME" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="font-label-md uppercase text-industrial-black block">Event Type</label>
+<select class="w-full border-2 border-industrial-black p-4 focus:ring-0 focus:border-heritage-red focus:bg-white outline-none bg-foundry-cream/20 font-label-md uppercase appearance-none cursor-pointer">
+<option>WEDDING</option>
+<option>CORPORATE</option>
+<option>SOCIAL</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-md uppercase text-industrial-black block">Approx Guests</label>
+<input class="w-full border-2 border-industrial-black p-4 focus:ring-0 focus:border-heritage-red focus:bg-white outline-none bg-foundry-cream/20 font-label-md uppercase" placeholder="100+" type="number"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-md uppercase text-industrial-black block">Additional Intel</label>
+<textarea class="w-full border-2 border-industrial-black p-4 focus:ring-0 focus:border-heritage-red focus:bg-white outline-none bg-foundry-cream/20 font-body-md" placeholder="DESCRIBE YOUR VISION..." rows="4"></textarea>
+</div>
+<button class="w-full bg-industrial-black text-ridge-gold font-label-xl py-6 border-2 border-industrial-black hover:bg-heritage-red hover:text-stark-white transition-all hard-offset-hover uppercase" type="submit">
+                        SUBMIT REQUISITION
+                    </button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer Space -->
+<footer class="bg-industrial-black text-stark-white pt-16 pb-24 md:pb-16 mt-section-gap border-t-4 border-ridge-gold">
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-3 gap-12">
+<div>
+<h5 class="font-headline-md text-ridge-gold uppercase mb-6">THE FOUNDRY</h5>
+<p class="font-body-md opacity-70">A legacy of iron and ambition. Located at the historic heart of Ambler, PA.</p>
+</div>
+<div>
+<h5 class="font-label-xl uppercase mb-6">OPERATIONS</h5>
+<ul class="font-label-md space-y-2 opacity-80 uppercase">
+<li>MON-THU: 11AM - 10PM</li>
+<li>FRI-SAT: 11AM - 12AM</li>
+<li>SUN: 11AM - 9PM</li>
+</ul>
+</div>
+<div>
+<h5 class="font-label-xl uppercase mb-6">INTEL</h5>
+<ul class="font-label-md space-y-2 opacity-80 uppercase">
+<li><a class="hover:text-ridge-gold transition-colors" href="#">Safety Protocols</a></li>
+<li><a class="hover:text-ridge-gold transition-colors" href="#">Vendor Guidelines</a></li>
+<li><a class="hover:text-ridge-gold transition-colors" href="#">Privacy Charter</a></li>
+</ul>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-margin-mobile md:px-gutter mt-16 pt-8 border-t border-stark-white/10 flex justify-between items-center font-caption uppercase tracking-widest text-stark-white/40">
+<span>© 1904-2024 RIDGE HALL AMBLER</span>
+<span>FORGED IN PENNSYLVANIA</span>
+</div>
+</footer>
+<!-- Mobile Navigation Shell -->
+<nav class="md:hidden fixed bottom-0 w-full z-50 flex justify-around items-center bg-industrial-black py-2 px-2 border-t-2 border-industrial-black">
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">home_app_logo</span>
+<span class="font-label-md uppercase text-[10px]">HUB</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-heritage-red text-stark-white rounded-none p-2 border-2 border-industrial-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span class="font-label-md uppercase text-[10px]">VENDORS</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">casino</span>
+<span class="font-label-md uppercase text-[10px]">DECIDE</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label-md uppercase text-[10px]">JOURNAL</span>
+</a>
+<a class="flex flex-col items-center justify-center text-foundry-cream p-2" href="#">
+<span class="material-symbols-outlined">loyalty</span>
+<span class="font-label-md uppercase text-[10px]">REWARDS</span>
+</a>
+</nav>
+<script>
+        // Micro-interaction for form inputs
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                const label = input.parentElement.querySelector('label');
+                if (label) label.classList.add('text-heritage-red');
+            });
+            input.addEventListener('blur', () => {
+                const label = input.parentElement.querySelector('label');
+                if (label) label.classList.remove('text-heritage-red');
+            });
+        });
+    </script>
+</body></html>

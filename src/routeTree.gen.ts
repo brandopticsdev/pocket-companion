@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as TastingJournalRouteImport } from './routes/tasting-journal'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as FoundryPassRouteImport } from './routes/foundry-pass'
 import { Route as FoodFactionsRouteImport } from './routes/food-factions'
 import { Route as FoodDeciderRouteImport } from './routes/food-decider'
@@ -20,6 +21,11 @@ import { Route as IndexRouteImport } from './routes/index'
 const TastingJournalRoute = TastingJournalRouteImport.update({
   id: '/tasting-journal',
   path: '/tasting-journal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FoundryPassRoute = FoundryPassRouteImport.update({
@@ -60,6 +66,7 @@ export interface FileRoutesByFullPath {
   '/food-decider': typeof FoodDeciderRoute
   '/food-factions': typeof FoodFactionsRoute
   '/foundry-pass': typeof FoundryPassRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tasting-journal': typeof TastingJournalRoute
 }
 export interface FileRoutesByTo {
@@ -69,6 +76,7 @@ export interface FileRoutesByTo {
   '/food-decider': typeof FoodDeciderRoute
   '/food-factions': typeof FoodFactionsRoute
   '/foundry-pass': typeof FoundryPassRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tasting-journal': typeof TastingJournalRoute
 }
 export interface FileRoutesById {
@@ -79,6 +87,7 @@ export interface FileRoutesById {
   '/food-decider': typeof FoodDeciderRoute
   '/food-factions': typeof FoodFactionsRoute
   '/foundry-pass': typeof FoundryPassRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/tasting-journal': typeof TastingJournalRoute
 }
 export interface FileRouteTypes {
@@ -90,6 +99,7 @@ export interface FileRouteTypes {
     | '/food-decider'
     | '/food-factions'
     | '/foundry-pass'
+    | '/sitemap.xml'
     | '/tasting-journal'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -99,6 +109,7 @@ export interface FileRouteTypes {
     | '/food-decider'
     | '/food-factions'
     | '/foundry-pass'
+    | '/sitemap.xml'
     | '/tasting-journal'
   id:
     | '__root__'
@@ -108,6 +119,7 @@ export interface FileRouteTypes {
     | '/food-decider'
     | '/food-factions'
     | '/foundry-pass'
+    | '/sitemap.xml'
     | '/tasting-journal'
   fileRoutesById: FileRoutesById
 }
@@ -118,6 +130,7 @@ export interface RootRouteChildren {
   FoodDeciderRoute: typeof FoodDeciderRoute
   FoodFactionsRoute: typeof FoodFactionsRoute
   FoundryPassRoute: typeof FoundryPassRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TastingJournalRoute: typeof TastingJournalRoute
 }
 
@@ -128,6 +141,13 @@ declare module '@tanstack/react-router' {
       path: '/tasting-journal'
       fullPath: '/tasting-journal'
       preLoaderRoute: typeof TastingJournalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/foundry-pass': {
@@ -182,8 +202,19 @@ const rootRouteChildren: RootRouteChildren = {
   FoodDeciderRoute: FoodDeciderRoute,
   FoodFactionsRoute: FoodFactionsRoute,
   FoundryPassRoute: FoundryPassRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TastingJournalRoute: TastingJournalRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}
